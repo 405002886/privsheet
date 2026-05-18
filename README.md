@@ -1,3 +1,5 @@
+[简体中文](README_zh.md) | English
+
 # PrivSheet - Browser-Only Excel Data Processing Tool
 
 > All data processing happens locally in your browser. No uploads, no registration, no internet required.
