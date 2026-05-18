@@ -1,0 +1,1062 @@
+{
+  "app": {
+    "siteTitle": "Excel Data Processing Tool",
+    "exportFilenamePrefix": "processed_result",
+    "loadingStatus": {
+      "parsingMultiple": "Parsing multiple files"
+    }
+  },
+  "common": {
+    "help": "Help",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "prev": "Previous",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "clear": "Clear",
+    "remove": "Remove",
+    "export": "Export",
+    "processing": "Processing...",
+    "invalidDataFormat": "Invalid data format"
+  },
+  "router": {
+    "home": "Home",
+    "help": "Help",
+    "task": "Task Processing"
+  },
+  "globalLoader": {
+    "loading": "Loading",
+    "parsing": "Parsing files",
+    "processing": "Processing data",
+    "exporting": "Exporting",
+    "almostDone": "Almost done",
+    "statusDefault": "Loading"
+  },
+  "home": {
+    "hero": {
+      "badge": "100% Local Processing · Data Never Leaves Your Device",
+      "titleLine1": "What do you want to do with",
+      "titleAccent": "spreadsheets",
+      "titleLine2": "today?",
+      "subtitle": "Data cleaning, masking, format conversion — zero learning curve",
+      "subtitleMono": "→ Drop file, one-click process, download instantly"
+    },
+    "status": {
+      "safe": "Local Secure",
+      "fast": "Millisecond Response",
+      "pro": "Professional Accuracy"
+    },
+    "tasks": {
+      "sectionLabel": "// Choose your operation",
+      "dedup": {
+        "title": "Deduplicate Data",
+        "description": "Intelligently identify and remove duplicate rows"
+      },
+      "mask": {
+        "title": "Sensitive Data Masking",
+        "description": "ID cards, phone numbers, emails hidden in one click"
+      },
+      "split": {
+        "title": "Split & Merge",
+        "description": "Column splitting, multi-file merging"
+      },
+      "clean": {
+        "title": "Data Cleaning",
+        "description": "Remove empty rows/cols, clean spaces and special chars"
+      },
+      "sort": {
+        "title": "Data Sorting",
+        "description": "Sort by column ascending/descending or shuffle"
+      },
+      "date": {
+        "title": "Date Format Standardization",
+        "description": "Unify chaotic date formats"
+      },
+      "convert": {
+        "title": "Format Conversion",
+        "description": "Excel/CSV/JSON/SQL multi-format conversion"
+      },
+      "extract": {
+        "title": "Batch Export",
+        "description": "Export column data as comma-separated string"
+      },
+      "calc": {
+        "title": "Statistics & Calculation",
+        "description": "Sum, count, average on numeric columns"
+      },
+      "custom": {
+        "title": "Custom Pipeline",
+        "description": "Combine multiple operations, batch processing"
+      },
+      "merge": {
+        "title": "Multi-File Merge",
+        "description": "Combine data from multiple Excel files into one"
+      },
+      "lookup": {
+        "title": "Lookup Match",
+        "description": "Multi-table lookup matching like VLOOKUP"
+      },
+      "wage": {
+        "title": "Wage Slip Split",
+        "description": "Split wage table into individual slips with header"
+      },
+      "action": "Process Now",
+      "popular": "HOT"
+    },
+    "features": {
+      "sectionLabel": "// Core Features",
+      "local": {
+        "title": "Local Security",
+        "description": "All processing done locally in your browser, data never uploaded"
+      },
+      "fast": {
+        "title": "Lightning Fast",
+        "description": "Web Worker async processing, smooth and seamless"
+      },
+      "preview": {
+        "title": "Instant Preview",
+        "description": "Real-time preview of processing results"
+      },
+      "mobile": {
+        "title": "Mobile Friendly",
+        "description": "Works on phones and tablets, anywhere"
+      }
+    },
+    "footer": {
+      "status": "All data processing completed in your local browser",
+      "meta": "Pure frontend · No registration · No internet required · Free & Open source"
+    },
+    "help": {
+      "backHome": "Back to Home",
+      "pageTitle": "Help & Documentation",
+      "quickStart": {
+        "title": "Quick Start",
+        "step1": {
+          "title": "Choose Processing Function",
+          "desc": "Select a data processing task from the homepage: deduplication, masking, format conversion, etc."
+        },
+        "step2": {
+          "title": "Upload Excel File",
+          "desc": "Drag-drop or click to upload your Excel file (.xlsx, .xls, .csv, .ods supported)"
+        },
+        "step3": {
+          "title": "Configure Parameters",
+          "desc": "Select columns to process and set options based on the chosen function"
+        },
+        "step4": {
+          "title": "Preview & Export",
+          "desc": "Review the results, then click Export to download the processed file"
+        }
+      },
+      "featuresOverview": {
+        "title": "Features Overview"
+      },
+      "features": {
+        "dedup": {
+          "tip": "Supports exact match and key-column deduplication"
+        },
+        "mask": {
+          "tip": "Smart recognition for 30+ countries ID formats"
+        },
+        "split": {
+          "tip": "For 18-digit ID, enter 3,4,4,4,3 to split"
+        },
+        "clean": {
+          "tip": "Combine multiple cleaning operations at once"
+        },
+        "sort": {
+          "tip": "Supports numeric, text, and date sorting"
+        },
+        "date": {
+          "tip": "Auto-detect and standardize messy date formats"
+        },
+        "convert": {
+          "tip": "Excel to CSV/JSON/SQL multi-format support"
+        },
+        "extract": {
+          "tip": "Quickly extract emails, phone numbers, etc."
+        },
+        "calc": {
+          "tip": "Group and summarize statistics"
+        },
+        "custom": {
+          "tip": "Pipeline mode combines multiple operations"
+        },
+        "merge": {
+          "tip": "Append rows or merge columns horizontally"
+        },
+        "lookup": {
+          "tip": "VLOOKUP-like multi-table matching"
+        },
+        "wage": {
+          "tip": "One-click split into individual slips with headers"
+        }
+      },
+      "tips": "Tips",
+      "useCases": {
+        "title": "Common Use Cases",
+        "result": "Result",
+        "case1": {
+          "title": "Customer Data Masking",
+          "step1": "Go to 「Sensitive Data Masking」",
+          "step2": "Upload Excel with customer info",
+          "step3": "Select ID, phone, email columns",
+          "step4": "Set masking to keep first & last chars",
+          "result": "ID 110101199001011234 → 110***********1234"
+        },
+        "case2": {
+          "title": "Wage Slip Split",
+          "step1": "Go to 「Wage Slip Split」",
+          "step2": "Upload wage data Excel",
+          "step3": "Select name column, generate slips",
+          "result": "One table → N individual slips (each with header)"
+        },
+        "case3": {
+          "title": "Multi-Table Lookup Match",
+          "step1": "Go to 「Lookup Match」",
+          "step2": "Upload main table and lookup table",
+          "step3": "Set key column and return columns",
+          "result": "Like VLOOKUP, merge data from two tables automatically"
+        }
+      },
+      "faq": {
+        "title": "FAQ",
+        "q1": "How to upload files?",
+        "a1": "Click any task card, then drag-drop or click to upload your Excel file. Supports .xlsx, .xls, .csv, .ods formats.",
+        "q2": "Is my data safe?",
+        "a2": "Absolutely! All file processing happens locally in your browser. Data is never uploaded to any server. The network monitor shows real-time if any data is transmitted externally.",
+        "q3": "How to save processed files?",
+        "a3": "After processing, click the 'Export' button and the file downloads directly to your device. No cloud intermediary.",
+        "q4": "Are large files supported?",
+        "a4": "Yes! It can handle files up to 100MB, with a free version limit of 5MB. For large files, it is recommended to use Chrome or Edge browsers.",
+        "q5": "What output formats are supported?",
+        "a5": "Export to Excel (with original styles), CSV, JSON, SQL INSERT, SQL IN query and more formats to meet different needs.",
+        "q6": "What's the difference between Pipeline and Normal mode?",
+        "a6": "Pipeline mode lets you combine multiple processing steps for complex workflows in one go. Normal mode is for single operations like one-time deduplication or masking. Pipeline is more efficient for complex needs."
+      },
+      "security": {
+        "title": "Data Security",
+        "badge": "100% Local Processing · Data Never Leaves Your Device",
+        "point1": {
+          "title": "Local Processing",
+          "desc": "All data processing done in browser locally"
+        },
+        "point2": {
+          "title": "Real-time Monitor",
+          "desc": "Network monitor detects any data transmission"
+        },
+        "point3": {
+          "title": "No Tracking",
+          "desc": "No user data collection, no tracking cookies"
+        },
+        "point4": {
+          "title": "Privacy Protected",
+          "desc": "All temporary data cleared when page closes"
+        }
+      },
+      "startUsing": "Start Using"
+    },
+    "helpModal": {
+      "title": "Help",
+      "q1": {
+        "title": "How to upload files?",
+        "content": "Click any task card, then drag-drop or click to upload your Excel file (.xlsx, .xls, .csv, .ods supported)."
+      },
+      "q2": {
+        "title": "Is my data safe?",
+        "content": "Absolutely! All file processing happens locally in your browser. We cannot access any of your data. The network monitor at the bottom shows if any data is transmitted externally."
+      },
+      "q3": {
+        "title": "How to save processed files?",
+        "content": "After processing, click the 'Export' button and the file will download directly to your device."
+      },
+      "q4": {
+        "title": "Are large files supported?",
+        "content": "Yes! Desktop supports files up to 100MB, mobile is limited to 50MB."
+      }
+    }
+  },
+  "pipelineStep": {
+    "enable": "Enable",
+    "disable": "Disable",
+    "moveUp": "Move Up",
+    "moveDown": "Move Down",
+    "remove": "Remove",
+    "edit": "Edit",
+    "columnIndex": "Column {index}",
+    "columnIndices": "Columns {indices}",
+    "partialMask": "Partial Mask",
+    "fullMask": "Full Mask",
+    "delimiter": "Delimiter: \"{value}\"",
+    "separator": "Separator: \"{value}\"",
+    "keepFirst": "Keep First",
+    "keepLast": "Keep Last",
+    "replace": "Replace \"{search}\" → \"{replace}\"",
+    "regex": "Regex: {pattern}",
+    "columnRange": "Columns {start}-{end}",
+    "quickMode": {
+      "keep-2-sides": "Keep 2 Sides",
+      "skip-one": "Skip One",
+      "keep-first-half": "Keep First Half",
+      "keep-last-half": "Keep Last Half"
+    },
+    "quick": "Quick",
+    "regexMode": "Regex",
+    "maskTypes": {
+      "partial": "Keep First & Last",
+      "full": "Hide Completely",
+      "initial": "Keep Initial",
+      "random": "Random"
+    },
+    "order": {
+      "asc": "Ascending",
+      "desc": "Descending"
+    },
+    "convertWidth": {
+      "toHalfWidth": "To Half Width",
+      "toFullWidth": "To Full Width"
+    },
+    "aggType": {
+      "sum": "Sum",
+      "count": "Count",
+      "avg": "Average",
+      "max": "Max",
+      "min": "Min"
+    },
+    "mergeMode": "Merge",
+    "splitByDelimiter": "By Delimiter",
+    "splitByWidth": "By Width",
+    "groupBy": "Group By",
+    "keepStrategy": {
+      "first": "First",
+      "last": "Last"
+    },
+    "toTable": "Table",
+    "widths": "Width",
+    "format": "Format",
+    "removeChars": "Remove",
+    "mapping": "Mapping",
+    "nameColumn": "Name Column",
+    "exportFormat": {
+      "excel": "Excel",
+      "pdf": "PDF"
+    },
+    "mathOp": "{operator} {value}",
+    "delimiterComma": "Comma",
+    "delimiterPipe": "Pipe",
+    "space": "Space",
+    "decimals": "Decimals",
+    "keyColumns": "Key Columns"
+  },
+  "pipelineEditor": {
+    "addStep": "Add Step",
+    "noSteps": "No processing steps yet",
+    "noStepsHint": "Click \"Add Step\" above to build your pipeline",
+    "addStepTitle": "Add Processing Step",
+    "editStepTitle": "Edit Processing Step",
+    "update": "Update",
+    "stepName": "Step Name",
+    "stepNamePlaceholder": "Custom step name",
+    "selectColumn": "Select Column",
+    "allColumns": "All Columns",
+    "maskType": "Masking Method",
+    "keepFirstLast": "Keep first 3 last 4",
+    "hideCompletely": "Hide Completely",
+    "keepInitial": "Keep Initial Only",
+    "random": "Random Generate",
+    "column": "Column {index}",
+    "splitDelimiter": "Delimiter",
+    "delimiterPlaceholder": "e.g., , or |",
+    "mergeColumns": "Select Columns to Merge",
+    "joiner": "Joiner",
+    "joinerPlaceholder": "e.g., - or space",
+    "dedupStrategy": "Deduplication Strategy",
+    "keepFirst": "Keep First",
+    "keepLast": "Keep Last",
+    "selectKeyColumn": "Select Key Column",
+    "search": "Search",
+    "searchPlaceholder": "Text to replace",
+    "replaceWith": "Replace With",
+    "replacePlaceholder": "Replacement text",
+    "selectColumn2": "Select Column",
+    "mappingRule": "Mapping Rule",
+    "mappingPlaceholder": "e.g., ABC→123",
+    "decimalPlaces": "Decimal Places",
+    "conversionType": "Conversion Type",
+    "toHalfWidth": "Full to Half Width",
+    "toFullWidth": "Half to Full Width",
+    "targetFormat": "Target Format",
+    "dateFormatHint": "Supported: YYYY-MM-DD, YYYY/MM/DD, DD/MM/YYYY etc.",
+    "regex": "Regular Expression",
+    "regexPlaceholder": "e.g., \\d+",
+    "operator": "Operator",
+    "value": "Value",
+    "groupColumn": "Group Column",
+    "aggColumn": "Aggregate Column",
+    "aggType": "Aggregation Type",
+    "sum": "Sum",
+    "count": "Count",
+    "avg": "Average",
+    "max": "Maximum",
+    "min": "Minimum",
+    "selectSortColumn": "Select Sort Column",
+    "tableName": "Table Name",
+    "tableNamePlaceholder": "e.g., users",
+    "removeChars": "Characters to Remove",
+    "removeCharsPlaceholder": "e.g., # $ %",
+    "removeCharsHint": "Enter special characters to remove, multiple characters can be written together",
+    "nameColumn": "Name Column",
+    "exportFormat": "Export Format",
+    "exportExcel": "Excel Format",
+    "exportPdf": "PDF Format",
+    "cancel": "Cancel",
+    "add": "Add",
+    "customMask": "Custom Masking",
+    "splitWidth": "Split by Width",
+    "splitWidths": "Width Settings",
+    "widthsPlaceholder": "e.g., 3,4,4,4,3",
+    "widthsExample": "Example: For 18-digit ID, enter 3,4,4,4,3",
+    "transpose": "Transpose",
+    "removeEmptyRows": "Remove Empty Rows",
+    "removeEmptyCols": "Remove Empty Columns",
+    "letterMapping": "Letter Mapping",
+    "extractRegex": "Regex Extract",
+    "sortAsc": "Ascending",
+    "sortDesc": "Descending",
+    "shuffle": "Random Shuffle",
+    "quickMask": "Quick Masking",
+    "regexMask": "Regex Masking",
+    "quickMode": "Quick Mask Mode",
+    "keep2Sides": "Keep 2 chars on both sides",
+    "skipOne": "Mask every other character",
+    "keepFirstHalf": "Mask first half",
+    "keepLastHalf": "Mask last half",
+    "calculateCount": "Count",
+    "calculateAvg": "Average",
+    "calculateMax": "Maximum",
+    "calculateMin": "Minimum",
+    "batchMath": "Batch Math",
+    "groupSummary": "Group Summary",
+    "toCsv": "To CSV",
+    "toJson": "To JSON",
+    "toSqlInsert": "SQL INSERT",
+    "toSqlInquery": "SQL IN Query",
+    "columnToString": "Column to String",
+    "wageSlipSplit": "Wage Slip Split",
+    "defaultTitle": "Data Processing Pipeline",
+    "example": "Example",
+    "category": {
+      "dedup": "Deduplication",
+      "mask": "Masking",
+      "splitMerge": "Split & Merge",
+      "clean": "Cleaning",
+      "format": "Formatting",
+      "text": "Text Processing",
+      "extract": "Extract",
+      "sort": "Sort",
+      "calc": "Calculation",
+      "wage": "Wage Slip",
+      "export": "Export"
+    }
+  },
+  "dataPreview": {
+    "column": "Column {index}",
+    "rowCount": "{rows} rows × {cols} cols",
+    "truncated": "(showing first {count} rows)",
+    "selectAll": "Select All",
+    "clearSelection": "Clear Selection"
+  },
+  "operations": {
+    "dedup-exact": "Exact Deduplication",
+    "dedup-key": "Key Column Deduplication",
+    "mask-id": "ID Masking",
+    "mask-phone": "Phone Masking",
+    "mask-email": "Email Masking",
+    "mask-name": "Name Masking",
+    "custom-mask": "Custom Masking",
+    "split-delimiter": "Split by Delimiter",
+    "split-width": "Split by Width",
+    "split-to-sheets": "Split Column to Sheets",
+    "wage-slip-split": "Wage Slip Split",
+    "merge": "Merge Columns",
+    "merge-append": "Append Merge",
+    "merge-horizontal": "Horizontal Merge",
+    "trim-whitespace": "Trim Whitespace",
+    "remove-all-spaces": "Remove All Spaces",
+    "remove-empty-rows": "Remove Empty Rows",
+    "remove-empty-cols": "Remove Empty Columns",
+    "replace-text": "Text Replace",
+    "letter-mapping": "Letter Mapping",
+    "to-upper": "To Uppercase",
+    "to-lower": "To Lowercase",
+    "capitalize": "Capitalize",
+    "normalize-dates": "Date Normalization",
+    "round-numbers": "Round Numbers",
+    "remove-special-chars": "Remove Special Chars",
+    "convert-width": "Width Conversion",
+    "transpose": "Transpose",
+    "extract-emails": "Extract Emails",
+    "extract-phones": "Extract Phones",
+    "extract-regex": "Regex Extract",
+    "column-to-string": "Column to String",
+    "calculate-sum": "Sum",
+    "calculate-avg": "Average",
+    "calculate-count": "Count",
+    "calculate-max": "Maximum",
+    "calculate-min": "Minimum",
+    "batch-math": "Batch Math",
+    "group-summary": "Group Summary",
+    "lookup-match": "VLOOKUP Match",
+    "to-json": "To JSON",
+    "to-csv": "To CSV",
+    "to-sql-insert": "SQL INSERT",
+    "to-sql-inquery": "SQL IN Query",
+    "sort-asc": "Ascending",
+    "sort-desc": "Descending",
+    "shuffle": "Random Shuffle",
+    "pipeline": "Pipeline"
+  },
+  "networkMonitor": {
+    "safe": "Local Safe Mode",
+    "warning": "Detected {count} external requests",
+    "panelTitle": "Network Activity Monitor",
+    "empty": {
+      "title": "No network requests recorded",
+      "hint": "All data processing is done locally"
+    },
+    "blocked": "External",
+    "error": "Error",
+    "securityNote": "Data Security: All file processing is done locally in your browser",
+    "externalBlocked": "External network request blocked",
+    "requestFailed": "Request failed: {msg}",
+    "xhrBlocked": "XHR {method} request blocked",
+    "xhrComplete": "XHR request completed",
+    "xhrFailed": "XHR request failed"
+  },
+  "uploader": {
+    "dragText": "Drag and drop files here, or click to upload",
+    "dragLookupTable": "Drag and drop lookup table file here, or click to upload",
+    "hintText": "Supports xlsx, xls, csv, ods formats",
+    "invalidType": "Unsupported file format: {filename}",
+    "fileTooLarge": "Free version supports files up to 5MB. Larger files? Pro version coming soon!"
+  },
+  "task": {
+    "backHome": "Back to Home",
+    "selectTask": "Select your data processing needs",
+    "steps": {
+      "selectAction": "Select Action",
+      "uploadFile": "Upload File",
+      "config": "Configure",
+      "preview": "Preview"
+    },
+    "uploadHint": "Upload your {task} file",
+    "configTitle": "Configure Processing Parameters",
+    "selectColumns": "Select columns to process",
+    "selectedColumns": "Selected",
+    "noSelection": "Click to select columns in the preview above",
+    "selectedColumn": "Selected: {column}",
+    "noExtraConfig": "No additional configuration needed for this operation",
+    "fileProcessFailed": "File processing failed",
+    "fileParseFailed": "File parsing failed",
+    "noSheetData": "No worksheet data in file",
+    "emptySheetData": "Worksheet data is empty",
+    "exportError": "No data to export",
+    "previewTitle": "Processing Results Preview",
+    "processedRows": "Processed rows",
+    "removedRows": "Removed rows",
+    "returnToModify": "Go Back",
+    "emptyPreview": "(empty)",
+    "tasks": {
+      "dedup": {
+        "title": "Deduplicate Data",
+        "description": "Help me find and delete duplicate rows",
+        "actions": {
+          "exact": {
+            "title": "Exact Row Match",
+            "hint": "Delete completely identical rows"
+          },
+          "key": {
+            "title": "Key Column Based",
+            "hint": "Dedupe based on specified column values"
+          }
+        },
+        "strategy": "Deduplication Strategy",
+        "keepFirst": "Keep first occurrence",
+        "keepLast": "Keep last occurrence",
+        "deleteAll": "Delete all duplicates"
+      },
+      "mask": {
+        "title": "Sensitive Data Masking",
+        "description": "ID cards, phone numbers, emails hidden in one click",
+        "actions": {
+          "id": {
+            "title": "ID Number Masking",
+            "hint": "Keep first 3 and last 4 digits"
+          },
+          "phone": {
+            "title": "Phone Number Masking",
+            "hint": "Keep first 3 and last 4 digits"
+          },
+          "email": {
+            "title": "Email Masking",
+            "hint": "Hide partial characters"
+          },
+          "name": {
+            "title": "Name Masking",
+            "hint": "Support Chinese and English names"
+          }
+        },
+        "method": "Masking Method",
+        "partial": "Keep first & last",
+        "full": "Fully hidden",
+        "initial": "Keep initial only",
+        "nameHint": "Support Chinese names (e.g., Zhang San, Ouyang Xiu) and English names (e.g., John Doe)",
+        "chinese": "Chinese",
+        "chineseExample": "Zhang Sanfeng",
+        "chinesePartialExample": "Z**feng",
+        "chineseInitialExample": "Z***",
+        "fullMaskExample": "****",
+        "english": "English",
+        "englishExample": "John Smith",
+        "englishPartialExample": "J*** S***",
+        "englishInitialExample": "J*** S****"
+      },
+      "clean": {
+        "title": "Data Cleaning",
+        "description": "Remove empty rows/cols, clean spaces and special chars",
+        "actions": {
+          "emptyRows": {
+            "title": "Remove Empty Rows",
+            "hint": "Delete blank rows"
+          },
+          "emptyCols": {
+            "title": "Remove Empty Columns",
+            "hint": "Delete blank columns"
+          },
+          "trim": {
+            "title": "Trim Whitespace",
+            "hint": "Clean leading/trailing spaces"
+          },
+          "removeSpaces": {
+            "title": "Remove All Spaces",
+            "hint": "Delete all space characters"
+          },
+          "specialChars": {
+            "title": "Remove Special Characters",
+            "hint": "Remove special symbols",
+            "label": "Special characters to remove",
+            "placeholder": "e.g., # $ % ^ & *"
+          }
+        },
+        "specialCharsHint": "Leave empty to remove all special characters, keeping only letters, numbers, and Chinese"
+      },
+      "sort": {
+        "title": "Data Sorting",
+        "description": "Sort by column ascending/descending or shuffle",
+        "column": "Sort Column",
+        "actions": {
+          "asc": {
+            "title": "Ascending Order",
+            "hint": "Small to large"
+          },
+          "desc": {
+            "title": "Descending Order",
+            "hint": "Large to small"
+          },
+          "shuffle": {
+            "title": "Random Shuffle",
+            "hint": "Randomize data order"
+          }
+        }
+      },
+      "split": {
+        "title": "Split/Merge Columns",
+        "description": "Split name column into first and last name",
+        "delimiter": "Delimiter",
+        "joiner": "Joiner",
+        "width": "Fixed Width",
+        "widthHint": "Section widths (comma separated)",
+        "widthPlaceholder": "e.g., 3,4,5",
+        "widthExample": "For example: ID card 18 digits, enter 3,4,4,4,3 to split",
+        "selectColumn": "Select Split Column",
+        "sheetCount": "Sheet Count",
+        "rows": "rows",
+        "actions": {
+          "delimiter": {
+            "title": "Split by Delimiter",
+            "hint": "Such as comma, space, etc."
+          },
+          "width": {
+            "title": "Split by Fixed Width",
+            "hint": "Split by character count"
+          },
+          "toSheets": {
+            "title": "Split Column to Sheets",
+            "hint": "Split data into multiple sheets by column values"
+          },
+          "merge": {
+            "title": "Merge Columns",
+            "hint": "Join with specified symbol"
+          },
+          "transpose": {
+            "title": "Transpose",
+            "hint": "Swap rows and columns"
+          }
+        }
+      },
+      "date": {
+        "title": "Organize Messy Dates",
+        "description": "Unify various date formats to 2025-01-01",
+        "targetFormat": "Target Format",
+        "actions": {
+          "format": {
+            "title": "Date Format Standardization",
+            "hint": "Convert to standard format"
+          }
+        }
+      },
+      "convert": {
+        "title": "Format Conversion",
+        "description": "Convert Excel to other formats",
+        "actions": {
+          "csv": {
+            "title": "Excel to CSV",
+            "hint": "Convert to CSV format"
+          },
+          "json": {
+            "title": "Excel to JSON",
+            "hint": "Convert to JSON format"
+          },
+          "sqlInsert": {
+            "title": "To SQL INSERT",
+            "hint": "Generate INSERT statements"
+          },
+          "sqlInquery": {
+            "title": "To SQL IN Query",
+            "hint": "Generate IN query statements",
+            "columnLabel": "IN Query Column"
+          }
+        }
+      },
+      "extract": {
+        "title": "Batch Export",
+        "description": "Export column data as comma-separated string",
+        "selectColumn": "Select Column to Export",
+        "actions": {
+          "columnToString": {
+            "title": "Column to String",
+            "hint": "Export column data as comma-separated text string"
+          }
+        }
+      },
+      "calc": {
+        "title": "Statistics & Calculation",
+        "description": "Sum, count, average on numeric columns",
+        "groupColumn": "Group By Column",
+        "aggColumn": "Aggregate Column",
+        "mathValuePlaceholder": "Value",
+        "add": "Add",
+        "subtract": "Subtract",
+        "multiply": "Multiply",
+        "divide": "Divide",
+        "actions": {
+          "sum": {
+            "title": "Sum",
+            "hint": "Calculate total"
+          },
+          "count": {
+            "title": "Count",
+            "hint": "Count items"
+          },
+          "avg": {
+            "title": "Average",
+            "hint": "Calculate average"
+          },
+          "max": {
+            "title": "Maximum",
+            "hint": "Find max value"
+          },
+          "min": {
+            "title": "Minimum",
+            "hint": "Find min value"
+          },
+          "batchMath": {
+            "title": "Batch Math",
+            "hint": "Add/subtract/multiply/divide"
+          },
+          "groupSummary": {
+            "title": "Group & Summarize",
+            "hint": "Group by column and summarize"
+          }
+        }
+      },
+      "custom": {
+        "title": "Custom Processing",
+        "description": "I have a series of complex requirements",
+        "replaceConfig": "Replace Config",
+        "pattern": "Regex Pattern",
+        "searchPlaceholder": "Search for",
+        "replacePlaceholder": "Replace with",
+        "patternPlaceholder": "Regex pattern, e.g. \\d+",
+        "decimalPlaces": "Decimal Places",
+        "toHalfWidth": "Full to Half Width",
+        "toFullWidth": "Half to Full Width",
+        "letterMappingConfig": "Letter Mapping",
+        "letterMappingPlaceholder": "A→X,B→Y,C→Z",
+        "letterMappingHint": "Use A→X format, separate multiple mappings with commas, case handled automatically",
+        "letterMappingTitle": "Letter Mapping",
+        "letterFrom": "From",
+        "letterTo": "To",
+        "actions": {
+          "pipeline": {
+            "title": "Custom Pipeline",
+            "hint": "Combine multiple operations"
+          },
+          "replace": {
+            "title": "Text Replace",
+            "hint": "Batch replace text"
+          },
+          "letterMapping": {
+            "title": "Letter Mapping",
+            "hint": "Replace letters using custom mapping"
+          },
+          "customMask": {
+            "title": "Custom Masking",
+            "hint": "Regex or quick masking",
+            "maskType": "Mask Type",
+            "regex": "Regex Masking",
+            "quick": "Quick Masking",
+            "quickMode": "Quick Mask Mode",
+            "quickModes": {
+              "keep-2-sides": "Keep 2 chars on both sides",
+              "skip-one": "Mask every other character",
+              "keep-first-half": "Mask first half",
+              "keep-last-half": "Mask last half"
+            },
+            "examples": {
+              "keep2sides": "Example: abcdefgh → ab******gh",
+              "skipOne": "Example: abcdefgh → a*c*e*g*",
+              "keepFirstHalf": "Example: abcdefgh → ****efgh",
+              "keepLastHalf": "Example: abcdefgh → abcd****"
+            },
+            "pattern": "Regex Pattern",
+            "replaceWith": "Replace With"
+          },
+          "toUpper": {
+            "title": "To Uppercase",
+            "hint": "Convert letters to uppercase"
+          },
+          "toLower": {
+            "title": "To Lowercase",
+            "hint": "Convert letters to lowercase"
+          },
+          "capitalize": {
+            "title": "Capitalize",
+            "hint": "Capitalize first letter of each word"
+          },
+          "convertWidth": {
+            "title": "Full/Half Width",
+            "hint": "Convert between full and half width"
+          },
+          "roundNumbers": {
+            "title": "Round Numbers",
+            "hint": "Keep specified decimal places"
+          }
+        }
+      },
+      "merge": {
+        "title": "Multi-File Merge",
+        "description": "Combine data from multiple Excel files into one",
+        "actions": {
+          "append": {
+            "title": "Append Rows",
+            "hint": "Append rows from multiple files"
+          },
+          "horizontal": {
+            "title": "Horizontal Merge",
+            "hint": "Merge columns side by side"
+          }
+        },
+        "mergeMode": "Merge Mode",
+        "appendMode": "Append Rows (header aligned)",
+        "horizontalMode": "Horizontal Merge (columns)",
+        "deduplicate": "Deduplicate after merge",
+        "deduplicateColumns": "Key columns for deduplication",
+        "uploadFiles": "Upload files to merge",
+        "selectSheets": "Select Sheet for each file",
+        "configMerge": "Configure merge options",
+        "fileList": "File List",
+        "sheetSelect": "Sheet Selection",
+        "mergePreview": "Merge Preview",
+        "needAtLeastTwoSheets": "At least two sheets are required for merge",
+        "mergeFailed": "Merge failed"
+      },
+      "lookup": {
+        "title": "Lookup Match",
+        "description": "Multi-table lookup matching like VLOOKUP",
+        "actions": {
+          "match": {
+            "title": "VLOOKUP Match",
+            "hint": "Match data based on key column"
+          }
+        },
+        "mainTable": "Main Table",
+        "mainKeyColumn": "Main Key Column",
+        "uploadMainTable": "Upload Main Table",
+        "uploadLookupTable": "Upload Lookup Table",
+        "selectMainSheet": "Select Main Sheet",
+        "selectLookupSheet": "Select Lookup Sheet",
+        "mainTablePreview": "Main Table Preview (first 5 rows)",
+        "lookupTablePreview": "Lookup Table Preview (first 5 rows)",
+        "lookupTable": "Lookup Table",
+        "uploadMain": "Upload Main Table",
+        "uploadLookup": "Upload Lookup Table",
+        "keyColumn": "Key Column",
+        "keyColumnHint": "Column for matching",
+        "lookupKeyColumn": "Lookup Key Column",
+        "returnColumns": "Return Columns",
+        "returnColumnsHint": "Select columns to return (excluding key column)",
+        "returnColumnsCount": "Return Columns",
+        "fuzzyMatch": "Fuzzy Match",
+        "exactMatch": "Exact Match",
+        "exactMatchDesc": "Complete match required",
+        "fuzzyMatchDesc": "Ignore case and spaces",
+        "matchMode": "Match Mode",
+        "fuzzyMatchHint": "Ignore case and space differences",
+        "ifNotFound": "Fill when not found",
+        "ifNotFoundHint": "Content to show when no match found",
+        "configMatch": "Configure Match Rules",
+        "matchPreview": "Match Preview",
+        "mainTableRows": "Main Table Rows",
+        "lookupTableRows": "Lookup Table Rows",
+        "matchFailed": "Match execution failed"
+      },
+      "wage": {
+        "title": "Wage Slip Split",
+        "description": "Split wage table into individual slips with header",
+        "actions": {
+          "split": {
+            "title": "Wage Slip Split",
+            "hint": "Generate printable wage slips"
+          }
+        },
+        "selectNameColumn": "Select Employee Name Column",
+        "autoDetect": "Auto Detect",
+        "exportFormat": "Export Format",
+        "excelFormat": "Excel (Multi-Sheet)",
+        "pdfFormat": "PDF (Print Ready)",
+        "previewSlip": "Preview Wage Slip",
+        "employeeCount": "Employee Count",
+        "slipCount": "Slip Count",
+        "pdfOptions": "PDF Options",
+        "orientation": "Orientation",
+        "portrait": "Portrait",
+        "landscape": "Landscape",
+        "fontSize": "Font Size",
+        "showHeaderEachPage": "Show header on each page"
+      }
+    }
+  },
+  "idCardCountries": {
+    "china": "China ID Card",
+    "usa": "US SSN",
+    "uk": "UK NI Number",
+    "germany": "German ID Card",
+    "france": "France SSN",
+    "japan": "Japan Resident Code",
+    "korea": "Korea Resident ID",
+    "canada": "Canada SIN",
+    "australia": "Australia TFN",
+    "spain": "Spain DNI/NIE",
+    "italy": "Italian Tax Code",
+    "netherlands": "Netherlands BSN",
+    "belgium": "Belgium BIS",
+    "switzerland": "Switzerland AHV",
+    "singapore": "Singapore NRIC",
+    "malaysia": "Malaysia IC",
+    "hongKong": "Hong Kong ID",
+    "taiwan": "Taiwan ID",
+    "macau": "Macau ID",
+    "russia": "Russia Passport",
+    "brazil": "Brazil CPF",
+    "mexico": "Mexico CURP",
+    "india": "India Aadhaar",
+    "indonesia": "Indonesia NIK",
+    "thailand": "Thailand ID",
+    "vietnam": "Vietnam ID",
+    "philippines": "Philippines SSRS",
+    "australiaMedicare": "Australia Medicare",
+    "newZealand": "New Zealand IRD",
+    "southAfrica": "South Africa ID",
+    "egypt": "Egypt ID",
+    "saudiArabia": "Saudi Arabia IQAMA",
+    "uae": "UAE Emirates ID"
+  },
+  "pipelinePreviewExamples": {
+    "chineseName": "Zhang San",
+    "englishName": "John Doe",
+    "email": "test(at)example.com",
+    "idCard": "110101199001011234",
+    "phone": "13800138000",
+    "sampleText": "abcdefgh",
+    "keep2SidesResult": "ab******gh",
+    "skipOneResult": "a*c*e*g*",
+    "keepFirstHalfResult": "****efgh",
+    "keepLastHalfResult": "abcd****"
+  },
+  "intent": {
+    "placeholder": "Try: mask ID number, remove duplicates",
+    "parsing": "Parsing intent...",
+    "singleAction": "Single Action",
+    "multiAction": "Pipeline",
+    "confirm": "Confirm",
+    "suggestions": "Try saying:",
+    "suggestionsLabel": "Try saying:",
+    "autoExecute": "System will execute in optimal order",
+    "waitingForFile": "Intent saved. Upload a file to auto-configure",
+    "exclusiveFiltered": "Contains {count} multi-file operation(s) that require separate execution"
+  },
+  "pipeline": {
+    "decimals": "Decimals:{n}",
+    "groupCol": "Group:{n}",
+    "width": "Width:{v}",
+    "removeChars": "Remove:{v}",
+    "fullWidth": "Full-width",
+    "halfWidth": "Half-width",
+    "nameCol": "Name col:{n}",
+    "mapping": "Mapping:{v}"
+  },
+  "merge": {
+    "colFallback": "Col {n}",
+    "fileCount": "{n} file(s)",
+    "rowCount": "{n} row(s)"
+  },
+  "errors": {
+    "invalidData": "Invalid data",
+    "invalidDataNotArray": "Invalid data: not an array",
+    "invalidDataEmpty": "Invalid data: empty array",
+    "invalidDataNotFirstRowArray": "Invalid data: first row is not an array, may be object array",
+    "invalidParams": "Invalid parameters",
+    "fileParseError": "File parsing failed",
+    "operationFailed": "Operation execution failed",
+    "regexInvalid": "Invalid regular expression",
+    "columnNotFound": "Column not found",
+    "columnIndexInvalid": "Invalid column index",
+    "emptySelection": "No selection",
+    "letterMappingEmpty": "Letter mapping table is required",
+    "letterMappingInvalid": "Invalid letter mapping format, use format like A→X,B→Y",
+    "selectAtLeastOneColumn": "Please select at least one column",
+    "selectAtLeastTwoColumns": "Please select at least two columns for merge",
+    "invalidMainTable": "Invalid main table data",
+    "invalidLookupTable": "Invalid lookup table data",
+    "needAtLeastTwoFiles": "At least two files are required for merge",
+    "invalidWageData": "Invalid wage table data, ensure data contains header and at least one row",
+    "nameColumnNotDetected": "Cannot auto-detect employee name column, please select manually",
+    "noValidWageRecords": "No valid wage records found",
+    "searchTextRequired": "Please provide search content",
+    "invalidDelimiter": "Please provide a valid delimiter",
+    "invalidWidths": "Please provide width array",
+    "noValidValues": "No valid values found"
+  }
+}

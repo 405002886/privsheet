@@ -1,0 +1,1063 @@
+{
+  "app": {
+    "siteTitle": "Excel数据处理工具",
+    "exportFilenamePrefix": "处理结果",
+    "loadingStatus": {
+      "parsingMultiple": "解析多文件中"
+    }
+  },
+  "common": {
+    "help": "帮助",
+    "close": "关闭",
+    "back": "返回",
+    "next": "下一步",
+    "prev": "上一步",
+    "confirm": "确认",
+    "cancel": "取消",
+    "clear": "清空",
+    "remove": "移除",
+    "export": "导出结果",
+    "processing": "处理中...",
+    "invalidDataFormat": "数据格式无效"
+  },
+  "router": {
+    "home": "首页",
+    "help": "帮助文档",
+    "task": "任务处理"
+  },
+  "globalLoader": {
+    "loading": "加载中",
+    "parsing": "解析文件中",
+    "processing": "处理数据中",
+    "exporting": "导出文件中",
+    "almostDone": "即将完成",
+    "statusDefault": "加载中"
+  },
+  "home": {
+    "hero": {
+      "badge": "100% 本地处理 · 数据绝不外传",
+      "titleLine1": "你今天想对",
+      "titleAccent": "表格",
+      "titleLine2": "做什么？",
+      "subtitle": "零门槛完成数据清洗、脱敏、格式转换",
+      "subtitleMono": "→ 拖入文件，一键处理，立即下载"
+    },
+    "status": {
+      "safe": "本地安全",
+      "fast": "毫秒响应",
+      "pro": "专业精准"
+    },
+    "tasks": {
+      "sectionLabel": "// 选择你的操作",
+      "dedup": {
+        "title": "清洗重复数据",
+        "description": "智能识别并移除重复行"
+      },
+      "mask": {
+        "title": "敏感信息脱敏",
+        "description": "身份证、手机号、邮箱一键隐藏"
+      },
+      "split": {
+        "title": "拆分与合并",
+        "description": "列拆分、多文件合并"
+      },
+      "clean": {
+        "title": "数据清洗",
+        "description": "去除空行空列、清理空格和特殊字符"
+      },
+      "sort": {
+        "title": "数据排序",
+        "description": "按列升序/降序排列或随机打乱"
+      },
+      "date": {
+        "title": "日期格式统一",
+        "description": "混乱日期格式标准化处理"
+      },
+      "convert": {
+        "title": "格式互转",
+        "description": "Excel/CSV/JSON/SQL 多格式转换"
+      },
+      "extract": {
+        "title": "批量提取",
+        "description": "邮箱、手机号、URL 智能提取"
+      },
+      "calc": {
+        "title": "统计计算",
+        "description": "对数值列进行求和、计数、平均等计算"
+      },
+      "custom": {
+        "title": "自定义管道",
+        "description": "组合多种操作，批量处理"
+      },
+      "merge": {
+        "title": "多文件合并",
+        "description": "将多个 Excel 文件的数据合并成一个"
+      },
+      "lookup": {
+        "title": "查找匹配",
+        "description": "类似 VLOOKUP 的多表关联匹配"
+      },
+      "wage": {
+        "title": "工资条拆分",
+        "description": "将工资表拆分为每人一条带表头的工资条"
+      },
+      "action": "立即处理",
+      "popular": "HOT"
+    },
+    "features": {
+      "sectionLabel": "// 核心优势",
+      "local": {
+        "title": "本地安全",
+        "description": "所有处理在浏览器本地完成，数据绝不上传"
+      },
+      "fast": {
+        "title": "极速处理",
+        "description": "Web Worker 异步处理，流畅不卡顿"
+      },
+      "preview": {
+        "title": "即时预览",
+        "description": "处理结果实时预览，所见即所得"
+      },
+      "mobile": {
+        "title": "移动适配",
+        "description": "支持手机、平板，随时随地处理"
+      }
+    },
+    "footer": {
+      "status": "所有数据处理均在本地浏览器完成",
+      "meta": "纯前端实现 · 无需注册 · 无需联网 · 开源免费"
+    },
+    "help": {
+      "backHome": "返回首页",
+      "pageTitle": "使用帮助",
+      "quickStart": {
+        "title": "快速上手",
+        "step1": {
+          "title": "选择处理功能",
+          "desc": "从首页选择一个你需要的数据处理任务，如数据清洗、脱敏、格式转换等"
+        },
+        "step2": {
+          "title": "上传 Excel 文件",
+          "desc": "拖拽或点击上传你的 Excel 文件（支持 .xlsx、.xls、.csv、.ods 格式）"
+        },
+        "step3": {
+          "title": "配置处理参数",
+          "desc": "根据不同的处理功能，选择要处理的列，设置相应的参数选项"
+        },
+        "step4": {
+          "title": "预览并导出结果",
+          "desc": "查看处理结果预览，确认无误后点击导出按钮下载处理后的文件"
+        }
+      },
+      "featuresOverview": {
+        "title": "功能一览"
+      },
+      "features": {
+        "dedup": {
+          "tip": "支持整行完全匹配和关键列去重两种模式"
+        },
+        "mask": {
+          "tip": "支持30+国家身份证格式智能识别"
+        },
+        "split": {
+          "tip": "身份证号18位可输入 3,4,4,4,3 进行拆分"
+        },
+        "clean": {
+          "tip": "可组合使用，一次性完成多项清洗"
+        },
+        "sort": {
+          "tip": "支持数值、文本、日期多种排序"
+        },
+        "date": {
+          "tip": "自动识别混乱日期格式并统一"
+        },
+        "convert": {
+          "tip": "Excel转CSV/JSON/SQL多格式支持"
+        },
+        "extract": {
+          "tip": "快速提取邮箱、手机号等内容"
+        },
+        "calc": {
+          "tip": "支持分组汇总统计"
+        },
+        "custom": {
+          "tip": "管道模式可组合多个操作批量处理"
+        },
+        "merge": {
+          "tip": "多个文件可追加行或横向拼接"
+        },
+        "lookup": {
+          "tip": "类似VLOOKUP的多表关联匹配"
+        },
+        "wage": {
+          "tip": "一键拆分为每人一条带表头的工资条"
+        }
+      },
+      "tips": "小贴士",
+      "useCases": {
+        "title": "典型使用场景",
+        "result": "效果",
+        "case1": {
+          "title": "客户数据脱敏处理",
+          "step1": "进入「敏感信息脱敏」功能",
+          "step2": "上传包含客户个人信息的Excel",
+          "step3": "选择身份证号、手机号、邮箱等列",
+          "step4": "设置脱敏方式（保留首尾字符）",
+          "result": "身份证 110101199001011234 → 110***********1234"
+        },
+        "case2": {
+          "title": "工资条拆分打印",
+          "step1": "进入「工资条拆分」功能",
+          "step2": "上传包含员工工资数据的Excel",
+          "step3": "选择姓名列，一键生成工资条",
+          "result": "一张工资表 → N张独立的员工工资条（每条带表头）"
+        },
+        "case3": {
+          "title": "多表数据关联匹配",
+          "step1": "进入「查找匹配」功能",
+          "step2": "上传主表和查找表",
+          "step3": "设置关键列和返回列",
+          "result": "类似VLOOKUP，自动匹配合并两个表的数据"
+        }
+      },
+      "faq": {
+        "title": "常见问题",
+        "q1": "如何上传文件？",
+        "a1": "点击任意任务卡片进入处理页面后，可通过拖拽或点击上传您的 Excel 文件。支持 .xlsx、.xls、.csv、.ods 等多种格式。",
+        "q2": "我的数据安全吗？",
+        "a2": "完全安全！所有文件处理都在您的浏览器本地完成，数据绝不会上传到任何服务器。页面底部的网络监视器会实时显示是否有数据外传。",
+        "q3": "处理后的文件如何保存？",
+        "a3": "处理完成后，点击「导出」按钮，文件将直接下载到您的设备。整个过程无需云端中转。",
+        "q4": "支持大文件吗？",
+        "a4": "支持！可处理最高 100MB 的文件，免费版限制为 5MB。超大文件建议使用 Chrome 或 Edge 浏览器。",
+        "q5": "支持哪些输出格式？",
+        "a5": "支持导出为 Excel（保留原样式）、CSV、JSON、SQL INSERT 语句、SQL IN 查询等多种格式，满足不同场景需求。",
+        "q6": "管道模式和普通模式有什么区别？",
+        "a6": "管道模式允许您组合多个处理步骤，一次性完成复杂的数据处理流程。普通模式适合单一操作，如只需做一次去重或脱敏。管道模式更高效，避免多次上传下载。"
+      },
+      "security": {
+        "title": "数据安全保障",
+        "badge": "100% 本地处理 · 数据绝不外传",
+        "point1": {
+          "title": "本地处理",
+          "desc": "所有数据处理在浏览器本地完成"
+        },
+        "point2": {
+          "title": "实时监控",
+          "desc": "网络监视器实时检测是否有数据外传"
+        },
+        "point3": {
+          "title": "无痕运行",
+          "desc": "不收集任何用户数据，不设置追踪Cookie"
+        },
+        "point4": {
+          "title": "隐私保护",
+          "desc": "关闭页面后所有临时数据自动清除"
+        }
+      },
+      "startUsing": "开始使用"
+    },
+    "helpModal": {
+      "title": "使用帮助",
+      "q1": {
+        "title": "如何上传文件？",
+        "content": "点击任意任务卡片，进入处理页面后，可通过拖拽或点击上传您的 Excel 文件（支持 .xlsx、.xls、.csv、.ods 格式）。"
+      },
+      "q2": {
+        "title": "我的数据安全吗？",
+        "content": "完全安全！所有文件处理都在您的浏览器本地完成，我们无法访问您的任何数据。页面底部的网络监视器会显示是否有数据外传。"
+      },
+      "q3": {
+        "title": "处理后的文件如何保存？",
+        "content": "处理完成后，点击'导出'按钮，文件将直接下载到您的设备。"
+      },
+      "q4": {
+        "title": "支持大文件吗？",
+        "content": "支持！桌面端可处理最高 100MB 的文件，移动端限制为 50MB。"
+      }
+    }
+  },
+  "pipelineStep": {
+    "enable": "启用",
+    "disable": "禁用",
+    "moveUp": "上移",
+    "moveDown": "下移",
+    "remove": "删除",
+    "edit": "编辑",
+    "columnIndex": "列 {index}",
+    "columnIndices": "列 {indices}",
+    "partialMask": "部分脱敏",
+    "fullMask": "完全脱敏",
+    "delimiter": "分隔符: \"{value}\"",
+    "separator": "连接符: \"{value}\"",
+    "keepFirst": "保留首次",
+    "keepLast": "保留最后",
+    "replace": "替换 \"{search}\" → \"{replace}\"",
+    "regex": "正则: {pattern}",
+    "columnRange": "列 {start}-{end}",
+    "quickMode": {
+      "keep-2-sides": "保两头",
+      "skip-one": "跳一字符",
+      "keep-first-half": "保前半",
+      "keep-last-half": "保后半"
+    },
+    "quick": "快速",
+    "regexMode": "正则",
+    "maskTypes": {
+      "partial": "保留首尾",
+      "full": "完全隐藏",
+      "initial": "仅留首字母",
+      "random": "随机生成"
+    },
+    "order": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "convertWidth": {
+      "toHalfWidth": "转半角",
+      "toFullWidth": "转全角"
+    },
+    "aggType": {
+      "sum": "求和",
+      "count": "计数",
+      "avg": "均值",
+      "max": "最大值",
+      "min": "最小值"
+    },
+    "mergeMode": "合并",
+    "splitByDelimiter": "分隔",
+    "splitByWidth": "按宽度",
+    "groupBy": "分组",
+    "keepStrategy": {
+      "first": "保首",
+      "last": "保尾"
+    },
+    "toTable": "表",
+    "widths": "宽度",
+    "format": "格式",
+    "removeChars": "移除",
+    "mapping": "映射",
+    "nameColumn": "姓名列",
+    "exportFormat": {
+      "excel": "Excel",
+      "pdf": "PDF"
+    },
+    "mathOp": "{operator} {value}",
+    "delimiterComma": "逗号",
+    "delimiterPipe": "竖线",
+    "space": "空格",
+    "decimals": "小数",
+    "keyColumns": "关键列"
+  },
+  "pipelineEditor": {
+    "addStep": "添加步骤",
+    "noSteps": "暂无处理步骤",
+    "noStepsHint": "点击上方\"添加步骤\"开始构建管道",
+    "addStepTitle": "添加处理步骤",
+    "editStepTitle": "编辑处理步骤",
+    "update": "更新",
+    "stepName": "步骤名称",
+    "stepNamePlaceholder": "自定义步骤名称",
+    "selectColumn": "选择列",
+    "allColumns": "全部列",
+    "maskType": "脱敏方式",
+    "keepFirstLast": "保留前3后4位",
+    "hideCompletely": "完全隐藏",
+    "keepInitial": "仅保留首字母",
+    "random": "随机生成",
+    "column": "列{index}",
+    "splitDelimiter": "分隔符",
+    "delimiterPlaceholder": "如: , 或 |",
+    "mergeColumns": "选择合并列",
+    "joiner": "连接符",
+    "joinerPlaceholder": "如: - 或 空格",
+    "dedupStrategy": "去重策略",
+    "keepFirst": "保留首次出现",
+    "keepLast": "保留最后一次出现",
+    "selectKeyColumn": "选择关键列",
+    "search": "搜索",
+    "searchPlaceholder": "要替换的文本",
+    "replaceWith": "替换为",
+    "replacePlaceholder": "替换后文本",
+    "selectColumn2": "选择列",
+    "mappingRule": "映射规则",
+    "mappingPlaceholder": "如: ABC→123",
+    "decimalPlaces": "小数位数",
+    "conversionType": "转换类型",
+    "toHalfWidth": "全角转半角",
+    "toFullWidth": "半角转全角",
+    "targetFormat": "目标格式",
+    "dateFormatHint": "支持的格式: YYYY-MM-DD, YYYY/MM/DD, DD/MM/YYYY 等",
+    "regex": "正则表达式",
+    "regexPlaceholder": "如: \\d+",
+    "operator": "运算符",
+    "value": "数值",
+    "groupColumn": "分组列",
+    "aggColumn": "汇总列",
+    "aggType": "汇总方式",
+    "sum": "求和",
+    "count": "计数",
+    "avg": "平均值",
+    "max": "最大值",
+    "min": "最小值",
+    "selectSortColumn": "选择排序列",
+    "tableName": "表名",
+    "tableNamePlaceholder": "如: users",
+    "removeChars": "要移除的字符",
+    "removeCharsPlaceholder": "如: # $ %",
+    "removeCharsHint": "输入要移除的特殊字符，多个字符直接连写",
+    "nameColumn": "姓名列",
+    "exportFormat": "导出格式",
+    "exportExcel": "Excel 格式",
+    "exportPdf": "PDF 格式",
+    "cancel": "取消",
+    "add": "添加",
+    "customMask": "自定义脱敏",
+    "splitWidth": "按宽度拆分",
+    "splitWidths": "宽度设置",
+    "widthsPlaceholder": "如: 3,4,4,4,3",
+    "widthsExample": "示例: 身份证号18位，可输入 3,4,4,4,3 进行拆分",
+    "transpose": "行列转置",
+    "removeEmptyRows": "删除空行",
+    "removeEmptyCols": "删除空列",
+    "letterMapping": "字母映射替换",
+    "extractRegex": "正则提取",
+    "sortAsc": "升序排列",
+    "sortDesc": "降序排列",
+    "shuffle": "随机乱序",
+    "quickMask": "快速脱敏",
+    "regexMask": "正则脱敏",
+    "quickMode": "快速脱敏模式",
+    "keep2Sides": "前后保留2位",
+    "skipOne": "隔一个字符隐藏",
+    "keepFirstHalf": "前半部分隐藏",
+    "keepLastHalf": "后半部分隐藏",
+    "calculateCount": "计数",
+    "calculateAvg": "平均值",
+    "calculateMax": "最大值",
+    "calculateMin": "最小值",
+    "batchMath": "批量运算",
+    "groupSummary": "分组汇总",
+    "toCsv": "转为CSV",
+    "toJson": "转为JSON",
+    "toSqlInsert": "SQL INSERT",
+    "toSqlInquery": "SQL IN查询",
+    "columnToString": "列转字符串",
+    "wageSlipSplit": "工资条拆分",
+    "defaultTitle": "数据处理管道",
+    "example": "示例",
+    "category": {
+      "dedup": "去重",
+      "mask": "脱敏",
+      "splitMerge": "拆分合并",
+      "clean": "清洗",
+      "format": "格式处理",
+      "text": "文本处理",
+      "extract": "提取",
+      "sort": "排序",
+      "calc": "统计计算",
+      "wage": "工资条",
+      "export": "导出"
+    }
+  },
+  "dataPreview": {
+    "column": "列 {index}",
+    "rowCount": "共 {rows} 行 × {cols} 列",
+    "truncated": "（已显示前 {count} 行）",
+    "selectAll": "全选列",
+    "clearSelection": "清空选择"
+  },
+  "operations": {
+    "dedup-exact": "整行去重",
+    "dedup-key": "关键列去重",
+    "mask-id": "身份证脱敏",
+    "mask-phone": "手机号脱敏",
+    "mask-email": "邮箱脱敏",
+    "mask-name": "姓名脱敏",
+    "custom-mask": "自定义脱敏",
+    "split-delimiter": "按分隔符拆分",
+    "split-width": "按宽度拆分",
+    "split-to-sheets": "按列拆分为多Sheet",
+    "wage-slip-split": "工资条拆分",
+    "merge": "合并列",
+    "merge-append": "追加合并",
+    "merge-horizontal": "横向合并",
+    "trim-whitespace": "去除首尾空格",
+    "remove-all-spaces": "去除所有空格",
+    "remove-empty-rows": "删除空行",
+    "remove-empty-cols": "删除空列",
+    "replace-text": "文本替换",
+    "letter-mapping": "字母映射替换",
+    "to-upper": "转大写",
+    "to-lower": "转小写",
+    "capitalize": "首字母大写",
+    "normalize-dates": "日期格式统一",
+    "round-numbers": "数字修约",
+    "remove-special-chars": "特殊字符清理",
+    "convert-width": "全角半角转换",
+    "transpose": "行列转置",
+    "extract-emails": "提取邮箱",
+    "extract-phones": "提取手机号",
+    "extract-regex": "正则提取",
+    "column-to-string": "列转字符串",
+    "calculate-sum": "求和",
+    "calculate-avg": "求平均值",
+    "calculate-count": "计数",
+    "calculate-max": "求最大值",
+    "calculate-min": "求最小值",
+    "batch-math": "批量运算",
+    "group-summary": "分组汇总",
+    "lookup-match": "VLOOKUP匹配",
+    "to-json": "转JSON",
+    "to-csv": "转CSV",
+    "to-sql-insert": "SQL INSERT",
+    "to-sql-inquery": "SQL IN查询",
+    "sort-asc": "升序排列",
+    "sort-desc": "降序排列",
+    "shuffle": "随机乱序",
+    "pipeline": "处理管道"
+  },
+  "networkMonitor": {
+    "safe": "本地安全模式",
+    "warning": "检测到 {count} 次外部请求",
+    "panelTitle": "网络活动监视",
+    "empty": {
+      "title": "暂无网络请求记录",
+      "hint": "所有数据处理都在本地完成"
+    },
+    "blocked": "外部",
+    "error": "错误",
+    "securityNote": "数据安全保障：所有文件处理均在您的浏览器本地完成",
+    "externalBlocked": "外部网络请求被拦截",
+    "requestFailed": "请求失败: {msg}",
+    "xhrBlocked": "XHR {method} 请求被拦截",
+    "xhrComplete": "XHR 请求完成",
+    "xhrFailed": "XHR 请求失败"
+  },
+  "uploader": {
+    "dragText": "拖拽文件到此处，或点击上传",
+    "dragLookupTable": "拖拽查找表文件到此处，或点击上传",
+    "hintText": "支持 xlsx、xls、csv、ods 格式",
+    "invalidType": "不支持的文件格式: {filename}",
+    "fileTooLarge": "免费版支持单文件5MB以内。更大文件？Pro版即将上线"
+  },
+  "task": {
+    "backHome": "返回首页",
+    "selectTask": "请选择您的数据处理需求",
+    "steps": {
+      "selectAction": "选择操作",
+      "uploadFile": "上传文件",
+      "config": "配置参数",
+      "preview": "预览结果"
+    },
+    "uploadHint": "上传您的 {task} 文件",
+    "configTitle": "配置处理参数",
+    "selectColumns": "选择要处理的列",
+    "selectedColumns": "已选择",
+    "noSelection": "请在上一步的预览中点击选择要处理的列",
+    "selectedColumn": "已选择：{column}",
+    "noExtraConfig": "此操作不需要额外配置",
+    "fileProcessFailed": "文件处理失败",
+    "fileParseFailed": "文件解析失败",
+    "noSheetData": "文件中没有工作表数据",
+    "emptySheetData": "工作表数据为空",
+    "exportError": "没有可导出的数据",
+    "previewTitle": "处理结果预览",
+    "processedRows": "处理行数",
+    "removedRows": "移除行数",
+    "returnToModify": "返回修改",
+    "emptyPreview": "(空)",
+    "tasks": {
+      "dedup": {
+        "title": "清洗重复数据",
+        "description": "帮我找出并删除重复的行",
+        "actions": {
+          "exact": {
+            "title": "整行完全匹配去重",
+            "hint": "删除完全相同的行"
+          },
+          "key": {
+            "title": "基于关键列去重",
+            "hint": "根据指定列的值去重"
+          }
+        },
+        "strategy": "去重策略",
+        "keepFirst": "保留首次出现",
+        "keepLast": "保留最后一次出现",
+        "deleteAll": "删除所有重复"
+      },
+      "mask": {
+        "title": "敏感信息脱敏",
+        "description": "支持30+国家身份证、手机号、邮箱一键隐藏",
+        "actions": {
+          "id": {
+            "title": "身份证号脱敏",
+            "hint": "智能识别多国格式，保留部分隐藏"
+          },
+          "phone": {
+            "title": "手机号脱敏",
+            "hint": "保留前3后4位"
+          },
+          "email": {
+            "title": "邮箱地址脱敏",
+            "hint": "隐藏部分字符"
+          },
+          "name": {
+            "title": "姓名脱敏",
+            "hint": "支持中文和英文姓名"
+          }
+        },
+        "method": "脱敏方式",
+        "partial": "保留首尾字符",
+        "full": "完全隐藏",
+        "initial": "仅保留首字母",
+        "nameHint": "支持中文姓名（如：张三、欧阳修）和英文姓名（如：John Doe）",
+        "chinese": "中文",
+        "chineseExample": "张三丰",
+        "chinesePartialExample": "张**丰",
+        "chineseInitialExample": "张***",
+        "fullMaskExample": "****",
+        "english": "英文",
+        "englishExample": "John Smith",
+        "englishPartialExample": "J*** S***",
+        "englishInitialExample": "J*** S****"
+      },
+      "clean": {
+        "title": "数据清洗",
+        "description": "去除空行空列、清理空格和特殊字符",
+        "actions": {
+          "emptyRows": {
+            "title": "去除空行",
+            "hint": "删除空白行"
+          },
+          "emptyCols": {
+            "title": "去除空列",
+            "hint": "删除空白列"
+          },
+          "trim": {
+            "title": "去除首尾空格",
+            "hint": "清理文字前后空白"
+          },
+          "removeSpaces": {
+            "title": "去除所有空格",
+            "hint": "删除全部空格字符"
+          },
+          "specialChars": {
+            "title": "清理特殊字符",
+            "hint": "移除特殊符号",
+            "label": "输入要移除的特殊字符",
+            "placeholder": "例如: # $ % ^ & *"
+          }
+        },
+        "specialCharsHint": "留空则移除所有特殊字符，仅保留字母、数字和中文"
+      },
+      "sort": {
+        "title": "数据排序",
+        "description": "按列升序/降序排列或随机打乱",
+        "column": "排序列",
+        "actions": {
+          "asc": {
+            "title": "升序排列",
+            "hint": "从小到大排序"
+          },
+          "desc": {
+            "title": "降序排列",
+            "hint": "从大到小排序"
+          },
+          "shuffle": {
+            "title": "随机乱序",
+            "hint": "打乱数据顺序"
+          }
+        }
+      },
+      "split": {
+        "title": "拆分/合并列",
+        "description": "把姓名一列拆成姓和名两列",
+        "delimiter": "分隔符",
+        "joiner": "连接符",
+        "width": "固定宽度",
+        "widthHint": "每段宽度（用逗号分隔）",
+        "widthPlaceholder": "例如: 3,4,5",
+        "widthExample": "例如：身份证号 18 位，可输入 3,4,4,4,3 进行拆分",
+        "selectColumn": "选择拆分列",
+        "sheetCount": "Sheet数量",
+        "rows": "行",
+        "actions": {
+          "delimiter": {
+            "title": "按分隔符拆分",
+            "hint": "如逗号、空格等"
+          },
+          "width": {
+            "title": "按固定宽度拆分",
+            "hint": "按字符数拆分"
+          },
+          "toSheets": {
+            "title": "按列拆分为多Sheet",
+            "hint": "按指定列的值拆分为多个工作表"
+          },
+          "merge": {
+            "title": "合并多列",
+            "hint": "用指定符号连接"
+          },
+          "transpose": {
+            "title": "行列转置",
+            "hint": "行列互换"
+          }
+        }
+      },
+      "date": {
+        "title": "整理混乱日期",
+        "description": "把各种写法的日期统一成2025-01-01格式",
+        "targetFormat": "目标格式",
+        "actions": {
+          "format": {
+            "title": "日期格式统一",
+            "hint": "转换为标准格式"
+          }
+        }
+      },
+      "convert": {
+        "title": "格式互转",
+        "description": "把Excel转成其他格式",
+        "actions": {
+          "csv": {
+            "title": "Excel转CSV",
+            "hint": "转为CSV格式"
+          },
+          "json": {
+            "title": "Excel转JSON",
+            "hint": "转为JSON格式"
+          },
+          "sqlInsert": {
+            "title": "转为SQL INSERT",
+            "hint": "生成INSERT语句"
+          },
+          "sqlInquery": {
+            "title": "转为SQL IN查询",
+            "hint": "生成IN查询语句",
+            "columnLabel": "IN查询列"
+          }
+        }
+      },
+      "extract": {
+        "title": "批量提取",
+        "description": "将选中列的数据用逗号分隔导出为字符串",
+        "selectColumn": "选择要导出的列",
+        "actions": {
+          "columnToString": {
+            "title": "列数据转字符串",
+            "hint": "将选中列的数据用逗号分隔导出为纯文本字符串"
+          }
+        }
+      },
+      "calc": {
+        "title": "统计计算",
+        "description": "对数值列进行求和、计数、平均等计算",
+        "groupColumn": "分组列",
+        "aggColumn": "汇总列",
+        "mathValuePlaceholder": "数值",
+        "add": "加",
+        "subtract": "减",
+        "multiply": "乘",
+        "divide": "除",
+        "actions": {
+          "sum": {
+            "title": "求和",
+            "hint": "计算数值总和"
+          },
+          "count": {
+            "title": "计数",
+            "hint": "统计数量"
+          },
+          "avg": {
+            "title": "平均值",
+            "hint": "计算平均值"
+          },
+          "max": {
+            "title": "最大值",
+            "hint": "找出最大值"
+          },
+          "min": {
+            "title": "最小值",
+            "hint": "找出最小值"
+          },
+          "batchMath": {
+            "title": "批量运算",
+            "hint": "加减值乘除运算"
+          },
+          "groupSummary": {
+            "title": "分组汇总",
+            "hint": "按列分组统计"
+          }
+        }
+      },
+      "custom": {
+        "title": "自定义处理",
+        "description": "我有一系列复杂需求",
+        "replaceConfig": "替换配置",
+        "pattern": "正则表达式",
+        "searchPlaceholder": "查找内容",
+        "replacePlaceholder": "替换为",
+        "patternPlaceholder": "正则表达式，如 \\d+",
+        "decimalPlaces": "小数位数",
+        "toHalfWidth": "全角转半角",
+        "toFullWidth": "半角转全角",
+        "letterMappingConfig": "字母映射",
+        "letterMappingPlaceholder": "A→X,B→Y,C→Z",
+        "letterMappingHint": "使用 A→X 格式，多个映射用逗号分隔，大小写自动处理",
+        "letterMappingTitle": "字母映射替换",
+        "letterFrom": "原字母",
+        "letterTo": "替换为",
+        "actions": {
+          "pipeline": {
+            "title": "自定义管道",
+            "hint": "组合多个操作"
+          },
+          "replace": {
+            "title": "文本替换",
+            "hint": "批量替换文字"
+          },
+          "letterMapping": {
+            "title": "字母映射替换",
+            "hint": "使用自定义映射表替换字母"
+          },
+          "customMask": {
+            "title": "自定义脱敏",
+            "hint": "正则脱敏或快速脱敏",
+            "maskType": "脱敏类型",
+            "regex": "正则脱敏",
+            "quick": "快速脱敏",
+            "quickMode": "快速脱敏模式",
+            "quickModes": {
+              "keep-2-sides": "前后保留2位",
+              "skip-one": "隔一个字符隐藏",
+              "keep-first-half": "前半部分隐藏",
+              "keep-last-half": "后半部分隐藏"
+            },
+            "examples": {
+              "keep2sides": "示例: abcdefgh → ab******gh",
+              "skipOne": "示例: abcdefgh → a*c*e*g*",
+              "keepFirstHalf": "示例: abcdefgh → ****efgh",
+              "keepLastHalf": "示例: abcdefgh → abcd****"
+            },
+            "pattern": "正则表达式",
+            "replaceWith": "替换字符"
+          },
+          "toUpper": {
+            "title": "转为大写",
+            "hint": "英文字母转大写"
+          },
+          "toLower": {
+            "title": "转为小写",
+            "hint": "英文字母转小写"
+          },
+          "capitalize": {
+            "title": "首字母大写",
+            "hint": "每个单词首字母大写"
+          },
+          "convertWidth": {
+            "title": "全角半角转换",
+            "hint": "全角转半角或反之"
+          },
+          "roundNumbers": {
+            "title": "数字修约",
+            "hint": "保留指定小数位"
+          }
+        }
+      },
+      "merge": {
+        "title": "多文件合并",
+        "description": "将多个 Excel 文件的数据合并成一个",
+        "actions": {
+          "append": {
+            "title": "追加行合并",
+            "hint": "将多个文件的行首尾相接"
+          },
+          "horizontal": {
+            "title": "横向拼接",
+            "hint": "将多个文件的列左右拼接"
+          }
+        },
+        "mergeMode": "合并模式",
+        "appendMode": "追加行（表头对齐）",
+        "horizontalMode": "横向拼接（列合并）",
+        "deduplicate": "合并后去重",
+        "deduplicateColumns": "去重关键列",
+        "keepFirst": "保留首次出现",
+        "uploadFiles": "上传要合并的文件",
+        "selectSheets": "选择每个文件的Sheet",
+        "configMerge": "配置合并选项",
+        "fileList": "文件列表",
+        "sheetSelect": "Sheet选择",
+        "mergePreview": "合并预览",
+        "needAtLeastTwoSheets": "至少需要两个 Sheet 才能合并",
+        "mergeFailed": "合并失败"
+      },
+      "lookup": {
+        "title": "查找匹配",
+        "description": "类似 VLOOKUP 的多表关联匹配",
+        "actions": {
+          "match": {
+            "title": "VLOOKUP 匹配",
+            "hint": "根据关键列匹配数据"
+          }
+        },
+        "mainTable": "主表",
+        "mainKeyColumn": "主表关键列",
+        "uploadMainTable": "上传主表",
+        "uploadLookupTable": "上传查找表",
+        "selectMainSheet": "选择主表工作表",
+        "selectLookupSheet": "选择查找表工作表",
+        "mainTablePreview": "主表预览（前5行）",
+        "lookupTablePreview": "查找表预览（前5行）",
+        "lookupTable": "查找表",
+        "uploadMain": "上传主表",
+        "uploadLookup": "上传查找表",
+        "keyColumn": "关键列",
+        "keyColumnHint": "用于匹配的列",
+        "lookupKeyColumn": "查找表关键列",
+        "returnColumns": "返回列",
+        "returnColumnsHint": "选择要返回的列（关键列除外）",
+        "returnColumnsCount": "返回列数",
+        "fuzzyMatch": "模糊匹配",
+        "exactMatch": "精确匹配",
+        "exactMatchDesc": "完全一致才匹配",
+        "fuzzyMatchDesc": "忽略大小写和空格",
+        "matchMode": "匹配模式",
+        "fuzzyMatchHint": "忽略大小写和空格差异",
+        "ifNotFound": "未找到时填充",
+        "ifNotFoundHint": "未匹配到数据时显示的内容",
+        "configMatch": "配置匹配规则",
+        "matchPreview": "匹配预览",
+        "mainTableRows": "主表行数",
+        "lookupTableRows": "查找表行数",
+        "matchFailed": "匹配执行失败"
+      },
+      "wage": {
+        "title": "工资条拆分",
+        "description": "将工资表拆分为每人一条带表头的工资条",
+        "actions": {
+          "split": {
+            "title": "工资条拆分",
+            "hint": "生成可打印的工资条"
+          }
+        },
+        "selectNameColumn": "选择员工姓名列",
+        "autoDetect": "自动检测",
+        "exportFormat": "导出格式",
+        "excelFormat": "Excel（多Sheet）",
+        "pdfFormat": "PDF（适合打印）",
+        "previewSlip": "预览工资条",
+        "employeeCount": "员工人数",
+        "slipCount": "工资条数量",
+        "pdfOptions": "PDF选项",
+        "orientation": "纸张方向",
+        "portrait": "纵向",
+        "landscape": "横向",
+        "fontSize": "字体大小",
+        "showHeaderEachPage": "每页显示表头"
+      }
+    }
+  },
+  "idCardCountries": {
+    "china": "中国身份证",
+    "usa": "美国SSN",
+    "uk": "英国NI号",
+    "germany": "德国身份证",
+    "france": "法国SSN",
+    "japan": "日本住民票コード",
+    "korea": "韩国居民身份证",
+    "canada": "加拿大SIN",
+    "australia": "澳大利亚TFN",
+    "spain": "西班牙DNI/NIE",
+    "italy": "意大利税号",
+    "netherlands": "荷兰BSN",
+    "belgium": "比利时BIS",
+    "switzerland": "瑞士AHV号",
+    "singapore": "新加坡身份证",
+    "malaysia": "马来西亚身份证",
+    "hongKong": "香港身份证",
+    "taiwan": "台湾身份证",
+    "macau": "澳门身份证",
+    "russia": "俄罗斯护照",
+    "brazil": "巴西CPF",
+    "mexico": "墨西哥CURP",
+    "india": "印度Aadhaar",
+    "indonesia": "印尼NIK",
+    "thailand": "泰国身份证",
+    "vietnam": "越南身份证",
+    "philippines": "菲律宾SSRS",
+    "australiaMedicare": "澳大利亚Medicare",
+    "newZealand": "新西兰IRD",
+    "southAfrica": "南非ID",
+    "egypt": "埃及身份证",
+    "saudiArabia": "沙特IQAMA",
+    "uae": "阿联酋身份证"
+  },
+  "pipelinePreviewExamples": {
+    "chineseName": "张三",
+    "englishName": "John Doe",
+    "email": "test(at)example.com",
+    "idCard": "110101199001011234",
+    "phone": "13800138000",
+    "sampleText": "abcdefgh",
+    "keep2SidesResult": "ab******gh",
+    "skipOneResult": "a*c*e*g*",
+    "keepFirstHalfResult": "****efgh",
+    "keepLastHalfResult": "abcd****"
+  },
+  "intent": {
+    "placeholder": "试试说：帮我把身份证号隐藏，再去掉重复行",
+    "parsing": "正在解析意图...",
+    "singleAction": "单步操作",
+    "multiAction": "多步清洗",
+    "confirm": "确认执行",
+    "suggestions": "试试这样说：",
+    "suggestionsLabel": "试试这样说：",
+    "autoExecute": "系统将自动按最优顺序执行以上操作",
+    "waitingForFile": "已记录您的操作意图，上传文件后将自动配置",
+    "exclusiveFiltered": "包含 {count} 个需单独执行的多文件操作"
+  },
+  "pipeline": {
+    "decimals": "小数:{n}",
+    "groupCol": "分组:{n}",
+    "width": "宽度:{v}",
+    "removeChars": "移除:{v}",
+    "fullWidth": "全角",
+    "halfWidth": "半角",
+    "nameCol": "姓名列:{n}",
+    "mapping": "映射:{v}"
+  },
+  "merge": {
+    "colFallback": "列{n}",
+    "fileCount": "{n} 个文件",
+    "rowCount": "{n} 行数据"
+  },
+  "errors": {
+    "invalidData": "无效数据",
+    "invalidDataNotArray": "无效数据：不是数组",
+    "invalidDataEmpty": "无效数据：空数组",
+    "invalidDataNotFirstRowArray": "无效数据：第一行不是数组，可能是对象数组",
+    "invalidParams": "无效参数",
+    "fileParseError": "文件解析失败",
+    "operationFailed": "操作执行失败",
+    "regexInvalid": "无效的正则表达式",
+    "columnNotFound": "列未找到",
+    "columnIndexInvalid": "列索引无效",
+    "emptySelection": "选择为空",
+    "letterMappingEmpty": "请提供字母映射表",
+    "letterMappingInvalid": "映射表格式无效，请使用格式如 A→X,B→Y",
+    "selectAtLeastOneColumn": "请至少选择一个列",
+    "selectAtLeastTwoColumns": "请至少选择两列进行合并",
+    "invalidMainTable": "无效主表数据",
+    "invalidLookupTable": "无效查找表数据",
+    "needAtLeastTwoFiles": "至少需要两个文件才能合并",
+    "invalidWageData": "无效工资表数据，请确保数据至少包含表头和一行数据",
+    "nameColumnNotDetected": "无法自动检测员工姓名列，请手动选择",
+    "noValidWageRecords": "没有找到有效的工资记录",
+    "searchTextRequired": "请提供搜索内容",
+    "invalidDelimiter": "请提供有效的分隔符",
+    "invalidWidths": "请提供宽度数组",
+    "noValidValues": "没有找到有效值"
+  }
+}
