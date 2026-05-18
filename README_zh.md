@@ -115,4 +115,4 @@ npm run format
 
 ## License
 
-Private - 保留所有权利
+[Apache-2.0](LICENSE)

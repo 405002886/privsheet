@@ -115,4 +115,4 @@ The project uses Husky + Commitlint for conventional commit messages.
 
 ## License
 
-Private — All rights reserved
+[Apache-2.0](LICENSE)

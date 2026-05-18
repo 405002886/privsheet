@@ -125,7 +125,8 @@
     },
     "footer": {
       "status": "All data processing completed in your local browser",
-      "meta": "Pure frontend · No registration · No internet required · Free & Open source"
+      "meta": "Pure frontend · No registration · No internet required · Free & Open source",
+      "copyright": "© {year} mengky — All rights reserved"
     },
     "help": {
       "backHome": "Back to Home",
