@@ -10,6 +10,7 @@
     "help": "Help",
     "close": "Close",
     "back": "Back",
+    "backHome": "Back to Home",
     "next": "Next",
     "prev": "Previous",
     "confirm": "Confirm",
@@ -23,6 +24,9 @@
   "router": {
     "home": "Home",
     "help": "Help",
+    "privacy": "Privacy Policy",
+    "about": "About Us",
+    "contact": "Contact",
     "task": "Task Processing"
   },
   "globalLoader": {
@@ -126,7 +130,10 @@
     "footer": {
       "status": "All data processing completed in your local browser",
       "meta": "Pure frontend · No registration · No internet required · Free & Open source",
-      "copyright": "© {year} mengky — All rights reserved"
+      "copyright": "© {year} mengky — All rights reserved",
+      "privacy": "Privacy Policy",
+      "about": "About Us",
+      "contact": "Contact"
     },
     "help": {
       "backHome": "Back to Home",
@@ -1059,5 +1066,81 @@
     "invalidDelimiter": "Please provide a valid delimiter",
     "invalidWidths": "Please provide width array",
     "noValidValues": "No valid values found"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updateDate": "Last updated: May 22, 2026",
+    "s1": {
+      "title": "Overview",
+      "desc": "PrivSheet is committed to protecting your privacy. We do not collect, store, or transmit any of your data. All data processing is completed locally in your browser, and all temporary data is automatically cleared when you close the page."
+    },
+    "s2": {
+      "title": "Data Collection",
+      "desc": "We do not collect any user data. Specifically:",
+      "item1": "We never upload your files to any server",
+      "item2": "We do not collect personal information (name, email, phone, etc.)",
+      "item3": "We do not use cookies to track your usage",
+      "item4": "We do not record your operation history or processing results"
+    },
+    "s3": {
+      "title": "Data Processing",
+      "desc": "All data processing is completed locally in your browser:",
+      "item1": "File parsing and data processing are entirely done in browser memory",
+      "item2": "Processing results are only stored in your local browser session",
+      "item3": "All temporary data is automatically cleared when you close the browser tab"
+    },
+    "s4": {
+      "title": "Network Security",
+      "desc": "We have a built-in network activity monitor (NetworkMonitor) that tracks all network requests in real time. You can check at any time whether any data is being transmitted externally. Under normal usage, there should be no external requests containing your data."
+    },
+    "s5": {
+      "title": "Third-party Services",
+      "desc": "PrivSheet does not rely on any third-party data processing services. All core functions (file parsing, data operations, export) are completed locally and work without internet access."
+    },
+    "s6": {
+      "title": "Policy Updates",
+      "desc": "If this policy changes, we will update the content on this page and modify the last updated date. We recommend that you check this page periodically for the latest privacy protection measures."
+    }
+  },
+  "about": {
+    "title": "About PrivSheet",
+    "s1": {
+      "title": "Origin",
+      "desc": "PrivSheet started from a simple need — helping people unfamiliar with Excel's complex features quickly complete data processing tasks. From a few simple tools originally built for family, it grew into a full-featured, easy-to-use tool specifically for people who'd rather not learn the intricacies of Excel."
+    },
+    "s2": {
+      "title": "Core Principles",
+      "desc": "PrivSheet's design and development follow these core principles:",
+      "item1": "Data security first — all processing is done locally, data never leaves your browser",
+      "item2": "Zero barrier — no registration, no installation, no internet required",
+      "item3": "What you see is what you get — real-time preview before export",
+      "item4": "Full functionality — covering data cleaning, masking, conversion, statistics and more",
+      "item5": "Continuous improvement — constantly optimizing and adding features based on user feedback"
+    },
+    "s3": {
+      "title": "Technology",
+      "desc": "PrivSheet is built on Vue 3, uses SheetJS for Excel parsing and ExcelJS for high-fidelity styled export. All calculations and operations run asynchronously in Web Workers for a smooth user experience. The project is licensed under Apache 2.0."
+    },
+    "s4": {
+      "title": "Open Source Contribution",
+      "desc": "PrivSheet is an open source project and welcomes community contributions. You can view the source code, submit issue reports, or participate in feature development on GitHub. We believe in the power of open source and hope that transparency helps users trust our product more."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "s1": {
+      "title": "Get in Touch",
+      "desc": "If you have any questions, suggestions, or feedback, feel free to reach out through the following channels. We'll respond as soon as possible."
+    },
+    "s2": {
+      "github": "View source code, submit issues, or contribute",
+      "issue": "Issue Reports",
+      "issueDesc": "Submit bug reports or feature suggestions",
+      "emailDesc": "Send us an email for direct communication"
+    },
+    "s3": {
+      "title": "Feedback & Suggestions",
+      "desc": "We value user feedback highly. Whether it's a feature suggestion, bug report, or improvement idea for the user experience, we welcome your input. Every piece of feedback helps us do better."
+    }
   }
 }

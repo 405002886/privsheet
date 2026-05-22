@@ -15,6 +15,24 @@ const routes = [
     meta: { titleKey: 'router.help' }
   },
   {
+    path: '/privacy',
+    name: 'privacy',
+    component: () => import('@/pages/PrivacyPage.vue'),
+    meta: { titleKey: 'router.privacy' }
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: () => import('@/pages/AboutPage.vue'),
+    meta: { titleKey: 'router.about' }
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: () => import('@/pages/ContactPage.vue'),
+    meta: { titleKey: 'router.contact' }
+  },
+  {
     path: '/task/:taskId',
     name: 'task',
     component: () => import('@/pages/TaskPage.vue'),

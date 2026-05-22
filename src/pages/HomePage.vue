@@ -129,6 +129,11 @@
           <span class="divider">|</span>
           <span>Apache-2.0 License</span>
         </div>
+        <div class="footer-links">
+          <router-link to="/privacy" class="footer-link">{{ t('home.footer.privacy') }}</router-link>
+          <router-link to="/about" class="footer-link">{{ t('home.footer.about') }}</router-link>
+          <router-link to="/contact" class="footer-link">{{ t('home.footer.contact') }}</router-link>
+        </div>
       </div>
     </footer>
 
@@ -748,6 +753,13 @@ function navigateToTask(taskId) {
 
 .footer-link:hover {
   color: var(--accent-primary);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
 }
 
 .divider {
