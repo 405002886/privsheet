@@ -45,24 +45,25 @@
           <span class="section-tag">02</span>
           <h2>{{ t('home.help.featuresOverview.title') }}</h2>
         </div>
-        <div class="features-grid">
+        <div class="feature-categories">
           <div
-            v-for="feature in featureList"
-            :key="feature.id"
-            class="feature-card"
-            :class="{ 'is-popular': feature.popular }"
+            v-for="cat in featureCategories"
+            :key="cat.id"
+            class="feature-category"
           >
-            <div class="feature-icon" v-html="feature.icon"></div>
-            <div class="feature-info">
-              <h3>
-                {{ feature.title }}
-                <span class="popular-tag" v-if="feature.popular">{{ t('home.tasks.popular') }}</span>
-              </h3>
-              <p>{{ feature.desc }}</p>
+            <div class="category-header">
+              <div class="category-icon" v-html="cat.icon"></div>
+              <h3>{{ t(`home.help.featureCategories.${cat.id}.title`) }}</h3>
             </div>
-            <div class="feature-tips" v-if="feature.tips">
-              <span class="tip-label">{{ t('home.help.tips') }}</span>
-              <span class="tip-text">{{ feature.tips }}</span>
+            <div class="category-items">
+              <div
+                v-for="item in cat.items"
+                :key="item.id"
+                class="category-item"
+              >
+                <span class="item-name">{{ t(`home.help.featureCategories.${cat.id}.items.${item.id}`) }}</span>
+                <span class="item-desc" v-if="item.desc">{{ t(`home.help.featureCategories.${cat.id}.items.${item.id}Desc`) }}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -199,111 +200,132 @@ const quickSteps = [
   }
 ]
 
-// 功能列表
-const featureList = [
+// 功能分类列表
+const featureCategories = [
   {
-    id: 'dedup',
-    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/><path d="M8 6v12M16 6v12"/></svg>',
-    title: t('home.tasks.dedup.title'),
-    desc: t('home.tasks.dedup.description'),
-    popular: true,
-    tips: t('home.help.features.dedup.tip')
+    id: 'clean',
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0-6v6"/></svg>',
+    items: [
+      { id: 'emptyRows', desc: true },
+      { id: 'emptyCols', desc: true },
+      { id: 'trim', desc: true },
+      { id: 'allSpaces', desc: true },
+      { id: 'specialChars', desc: true },
+      { id: 'fullHalf', desc: true }
+    ]
   },
   {
     id: 'mask',
-    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>',
-    title: t('home.tasks.mask.title'),
-    desc: t('home.tasks.mask.description'),
-    popular: false,
-    tips: t('home.help.features.mask.tip')
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>',
+    items: [
+      { id: 'idCard', desc: true },
+      { id: 'phone', desc: true },
+      { id: 'email', desc: true },
+      { id: 'name', desc: true },
+      { id: 'custom', desc: true },
+      { id: 'quick', desc: true },
+      { id: 'regex', desc: true }
+    ]
   },
   {
     id: 'split',
-    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9v14h8M7 5h6v14H7"/></svg>',
-    title: t('home.tasks.split.title'),
-    desc: t('home.tasks.split.description'),
-    popular: true,
-    tips: t('home.help.features.split.tip')
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9v14h8M7 5h6v14H7"/></svg>',
+    items: [
+      { id: 'delimiter', desc: true },
+      { id: 'width', desc: true },
+      { id: 'toSheets', desc: true },
+      { id: 'merge', desc: true },
+      { id: 'transpose', desc: true }
+    ]
   },
   {
-    id: 'clean',
-    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0-6v6"/></svg>',
-    title: t('home.tasks.clean.title'),
-    desc: t('home.tasks.clean.description'),
-    popular: false,
-    tips: t('home.help.features.clean.tip')
+    id: 'dedup',
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/><path d="M8 6v12M16 6v12"/></svg>',
+    items: [
+      { id: 'exact', desc: true },
+      { id: 'key', desc: true },
+      { id: 'keepFirst', desc: true },
+      { id: 'keepLast', desc: true }
+    ]
   },
   {
     id: 'sort',
-    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M6 12h12M9 18h6"/><path d="M19 9l2 2-2 2M5 13l-2 2 2 2"/></svg>',
-    title: t('home.tasks.sort.title'),
-    desc: t('home.tasks.sort.description'),
-    popular: false,
-    tips: t('home.help.features.sort.tip')
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M6 12h12M9 18h6"/><path d="M19 9l2 2-2 2M5 13l-2 2 2 2"/></svg>',
+    items: [
+      { id: 'asc', desc: true },
+      { id: 'desc', desc: true },
+      { id: 'shuffle', desc: true }
+    ]
   },
   {
-    id: 'date',
-    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
-    title: t('home.tasks.date.title'),
-    desc: t('home.tasks.date.description'),
-    popular: false,
-    tips: t('home.help.features.date.tip')
+    id: 'format',
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
+    items: [
+      { id: 'date', desc: true },
+      { id: 'round', desc: true },
+      { id: 'csv', desc: true },
+      { id: 'json', desc: true },
+      { id: 'sqlInsert', desc: true },
+      { id: 'sqlIn', desc: true }
+    ]
   },
   {
-    id: 'convert',
-    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14l4 4m-4-4v10l6-6"/></svg>',
-    title: t('home.tasks.convert.title'),
-    desc: t('home.tasks.convert.description'),
-    popular: true,
-    tips: t('home.help.features.convert.tip')
+    id: 'text',
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7V4h16v3"/><path d="M9 20h6M12 4v16"/></svg>',
+    items: [
+      { id: 'replace', desc: true },
+      { id: 'letterMap', desc: true },
+      { id: 'upper', desc: true },
+      { id: 'lower', desc: true },
+      { id: 'capitalize', desc: true }
+    ]
   },
   {
     id: 'extract',
-    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>',
-    title: t('home.tasks.extract.title'),
-    desc: t('home.tasks.extract.description'),
-    popular: false,
-    tips: t('home.help.features.extract.tip')
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>',
+    items: [
+      { id: 'colStr', desc: true },
+      { id: 'regex', desc: true }
+    ]
   },
   {
     id: 'calc',
-    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="12" y1="10" x2="14" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="12" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="16" y2="18"/></svg>',
-    title: t('home.tasks.calc.title'),
-    desc: t('home.tasks.calc.description'),
-    popular: false,
-    tips: t('home.help.features.calc.tip')
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="12" y1="10" x2="14" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="12" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="16" y2="18"/></svg>',
+    items: [
+      { id: 'sum', desc: true },
+      { id: 'count', desc: true },
+      { id: 'avg', desc: true },
+      { id: 'max', desc: true },
+      { id: 'min', desc: true },
+      { id: 'batchMath', desc: true },
+      { id: 'group', desc: true }
+    ]
   },
   {
-    id: 'custom',
-    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>',
-    title: t('home.tasks.custom.title'),
-    desc: t('home.tasks.custom.description'),
-    popular: true,
-    tips: t('home.help.features.custom.tip')
-  },
-  {
-    id: 'merge',
-    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>',
-    title: t('home.tasks.merge.title'),
-    desc: t('home.tasks.merge.description'),
-    popular: true,
-    tips: t('home.help.features.merge.tip')
-  },
-  {
-    id: 'lookup',
-    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>',
-    title: t('home.tasks.lookup.title'),
-    desc: t('home.tasks.lookup.description'),
-    popular: false,
-    tips: t('home.help.features.lookup.tip')
+    id: 'multi',
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>',
+    items: [
+      { id: 'append', desc: true },
+      { id: 'horizontal', desc: true },
+      { id: 'lookup', desc: true }
+    ]
   },
   {
     id: 'wage',
-    icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><path d="M12 15v4M8 19h8"/></svg>',
-    title: t('home.tasks.wage.title'),
-    desc: t('home.tasks.wage.description'),
-    popular: false,
-    tips: t('home.help.features.wage.tip')
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><path d="M12 15v4M8 19h8"/></svg>',
+    items: [
+      { id: 'split', desc: true },
+      { id: 'excel', desc: true },
+      { id: 'pdf', desc: true }
+    ]
+  },
+  {
+    id: 'pipeline',
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>',
+    items: [
+      { id: 'custom', desc: true },
+      { id: 'intent', desc: true }
+    ]
   }
 ]
 

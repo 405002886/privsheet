@@ -160,45 +160,172 @@
       "featuresOverview": {
         "title": "Features Overview"
       },
-      "features": {
-        "dedup": {
-          "tip": "Supports exact match and key-column deduplication"
+      "featureCategories": {
+        "clean": {
+          "title": "Data Cleaning",
+          "items": {
+            "emptyRows": "Remove Empty Rows",
+            "emptyRowsDesc": "Delete all rows with empty content",
+            "emptyCols": "Remove Empty Columns",
+            "emptyColsDesc": "Delete all columns with empty content",
+            "trim": "Trim Spaces",
+            "trimDesc": "Remove leading and trailing whitespace",
+            "allSpaces": "Remove All Spaces",
+            "allSpacesDesc": "Delete all spaces within cells",
+            "specialChars": "Remove Special Characters",
+            "specialCharsDesc": "Remove specified or all special characters",
+            "fullHalf": "Full/Half-width Conversion",
+            "fullHalfDesc": "Convert full-width numbers/letters to half-width or vice versa"
+          }
         },
         "mask": {
-          "tip": "Smart recognition for 30+ countries ID formats"
+          "title": "Sensitive Data Masking",
+          "items": {
+            "idCard": "ID Card Masking",
+            "idCardDesc": "Smart recognition for 30+ country ID formats",
+            "phone": "Phone Number Masking",
+            "phoneDesc": "Keep first 3 and last 4 digits, mask middle with *",
+            "email": "Email Masking",
+            "emailDesc": "Hide characters before @ symbol",
+            "name": "Name Masking",
+            "nameDesc": "Support Chinese and English name masking",
+            "custom": "Custom Masking",
+            "customDesc": "Flexible masking for any column",
+            "quick": "Quick Mask Mode",
+            "quickDesc": "Keep ends / skip-one / keep-first-half / keep-second-half",
+            "regex": "Regex Masking",
+            "regexDesc": "Match and replace using regular expressions"
+          }
         },
         "split": {
-          "tip": "For 18-digit ID, enter 3,4,4,4,3 to split"
+          "title": "Split & Merge",
+          "items": {
+            "delimiter": "Split by Delimiter",
+            "delimiterDesc": "Split one column into multiple by comma, space, etc.",
+            "width": "Split by Fixed Width",
+            "widthDesc": "Split by character count, e.g. ID card 3,4,4,4,3",
+            "toSheets": "Split into Multiple Sheets",
+            "toSheetsDesc": "Split into worksheets by specified column values",
+            "merge": "Merge Columns",
+            "mergeDesc": "Combine multiple columns into one with a separator",
+            "transpose": "Transpose Rows & Columns",
+            "transposeDesc": "Swap rows and columns"
+          }
         },
-        "clean": {
-          "tip": "Combine multiple cleaning operations at once"
+        "dedup": {
+          "title": "Deduplication",
+          "items": {
+            "exact": "Exact Row Dedup",
+            "exactDesc": "Remove rows where all fields are identical",
+            "key": "Key Column Dedup",
+            "keyDesc": "Deduplicate based on specified column values",
+            "keepFirst": "Keep First Occurrence",
+            "keepFirstDesc": "Retain the first duplicate row",
+            "keepLast": "Keep Last Occurrence",
+            "keepLastDesc": "Retain the last duplicate row"
+          }
         },
         "sort": {
-          "tip": "Supports numeric, text, and date sorting"
+          "title": "Data Sorting",
+          "items": {
+            "asc": "Ascending Sort",
+            "ascDesc": "Sort by number/text/date from small to large",
+            "desc": "Descending Sort",
+            "descDesc": "Sort by number/text/date from large to small",
+            "shuffle": "Random Shuffle",
+            "shuffleDesc": "Randomize the order of data rows"
+          }
         },
-        "date": {
-          "tip": "Auto-detect and standardize messy date formats"
+        "format": {
+          "title": "Format Processing & Conversion",
+          "items": {
+            "date": "Date Format Normalization",
+            "dateDesc": "Auto-detect messy dates and convert to standard format",
+            "round": "Number Rounding",
+            "roundDesc": "Round to specified decimal places",
+            "csv": "Convert to CSV",
+            "csvDesc": "Export Excel data as CSV format",
+            "json": "Convert to JSON",
+            "jsonDesc": "Export Excel data as JSON format",
+            "sqlInsert": "Convert to SQL INSERT",
+            "sqlInsertDesc": "Generate INSERT INTO statements",
+            "sqlIn": "Convert to SQL IN",
+            "sqlInDesc": "Generate IN query statements"
+          }
         },
-        "convert": {
-          "tip": "Excel to CSV/JSON/SQL multi-format support"
+        "text": {
+          "title": "Text Processing",
+          "items": {
+            "replace": "Text Replacement",
+            "replaceDesc": "Batch find and replace text content",
+            "letterMap": "Letter Mapping",
+            "letterMapDesc": "Replace letters using custom mapping table",
+            "upper": "To Uppercase",
+            "upperDesc": "Convert all English letters to uppercase",
+            "lower": "To Lowercase",
+            "lowerDesc": "Convert all English letters to lowercase",
+            "capitalize": "Capitalize First Letter",
+            "capitalizeDesc": "Capitalize the first letter of each word"
+          }
         },
         "extract": {
-          "tip": "Quickly extract emails, phone numbers, etc."
+          "title": "Batch Extraction",
+          "items": {
+            "colStr": "Column to String",
+            "colStrDesc": "Export selected column data as comma-separated string",
+            "regex": "Regex Extraction",
+            "regexDesc": "Extract matching content using regular expressions"
+          }
         },
         "calc": {
-          "tip": "Group and summarize statistics"
+          "title": "Statistics & Calculation",
+          "items": {
+            "sum": "Sum",
+            "sumDesc": "Calculate total of numeric columns",
+            "count": "Count",
+            "countDesc": "Count non-empty cells",
+            "avg": "Average",
+            "avgDesc": "Calculate arithmetic mean of numeric columns",
+            "max": "Maximum",
+            "maxDesc": "Find the maximum value in numeric columns",
+            "min": "Minimum",
+            "minDesc": "Find the minimum value in numeric columns",
+            "batchMath": "Batch Arithmetic",
+            "batchMathDesc": "Perform add/subtract/multiply/divide on numeric columns",
+            "group": "Grouped Summary",
+            "groupDesc": "Group by specified column, then sum/count/avg on summary columns"
+          }
         },
-        "custom": {
-          "tip": "Pipeline mode combines multiple operations"
-        },
-        "merge": {
-          "tip": "Append rows or merge columns horizontally"
-        },
-        "lookup": {
-          "tip": "VLOOKUP-like multi-table matching"
+        "multi": {
+          "title": "Multi-File Operations",
+          "items": {
+            "append": "Append Rows",
+            "appendDesc": "Concatenate rows from multiple files, align headers",
+            "horizontal": "Horizontal Concatenation",
+            "horizontalDesc": "Join columns from multiple files side by side",
+            "lookup": "VLOOKUP Matching",
+            "lookupDesc": "Multi-table join similar to Excel VLOOKUP"
+          }
         },
         "wage": {
-          "tip": "One-click split into individual slips with headers"
+          "title": "Payslip Splitting",
+          "items": {
+            "split": "Split by Name",
+            "splitDesc": "Split payroll into individual payslips with headers",
+            "excel": "Export to Excel",
+            "excelDesc": "One sheet per employee, preserving original styles",
+            "pdf": "Export to PDF",
+            "pdfDesc": "Print-ready, supports paper orientation and font settings"
+          }
+        },
+        "pipeline": {
+          "title": "Custom Pipeline & Smart Intent",
+          "items": {
+            "custom": "Custom Pipeline",
+            "customDesc": "Combine multiple operations into a sequential batch",
+            "intent": "Smart Intent Input",
+            "intentDesc": "Natural language auto-detects operation intent, multiple intents enter pipeline mode"
+          }
         }
       },
       "tips": "Tips",

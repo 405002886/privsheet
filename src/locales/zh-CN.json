@@ -160,45 +160,172 @@
       "featuresOverview": {
         "title": "功能一览"
       },
-      "features": {
-        "dedup": {
-          "tip": "支持整行完全匹配和关键列去重两种模式"
+      "featureCategories": {
+        "clean": {
+          "title": "数据清洗",
+          "items": {
+            "emptyRows": "去除空行",
+            "emptyRowsDesc": "删除所有内容为空的行",
+            "emptyCols": "去除空列",
+            "emptyColsDesc": "删除所有内容为空的列",
+            "trim": "去除首尾空格",
+            "trimDesc": "清理单元格文字前后的空白字符",
+            "allSpaces": "去除所有空格",
+            "allSpacesDesc": "删除单元格内的全部空格",
+            "specialChars": "特殊字符清理",
+            "specialCharsDesc": "移除指定或所有特殊字符",
+            "fullHalf": "全角半角转换",
+            "fullHalfDesc": "全角数字/字母转半角或反之"
+          }
         },
         "mask": {
-          "tip": "支持30+国家身份证格式智能识别"
+          "title": "敏感信息脱敏",
+          "items": {
+            "idCard": "身份证脱敏",
+            "idCardDesc": "支持30+国家身份证格式智能识别",
+            "phone": "手机号脱敏",
+            "phoneDesc": "保留前3后4位，中间用*替代",
+            "email": "邮箱脱敏",
+            "emailDesc": "隐藏邮箱@前部分字符",
+            "name": "姓名脱敏",
+            "nameDesc": "支持中文和英文姓名脱敏",
+            "custom": "自定义脱敏",
+            "customDesc": "对任意列进行灵活脱敏处理",
+            "quick": "快速脱敏模式",
+            "quickDesc": "保两头/跳一字符/保前半/保后半",
+            "regex": "正则脱敏",
+            "regexDesc": "使用正则表达式匹配并替换"
+          }
         },
         "split": {
-          "tip": "身份证号18位可输入 3,4,4,4,3 进行拆分"
+          "title": "拆分与合并",
+          "items": {
+            "delimiter": "按分隔符拆分",
+            "delimiterDesc": "按逗号、空格等分隔符拆分一列为多列",
+            "width": "按固定宽度拆分",
+            "widthDesc": "按字符数拆分，如身份证3,4,4,4,3",
+            "toSheets": "按列拆分为多Sheet",
+            "toSheetsDesc": "按指定列的值拆分为多个工作表",
+            "merge": "合并多列",
+            "mergeDesc": "用指定连接符合并多列为一列",
+            "transpose": "行列转置",
+            "transposeDesc": "行与列互换位置"
+          }
         },
-        "clean": {
-          "tip": "可组合使用，一次性完成多项清洗"
+        "dedup": {
+          "title": "去重与排序",
+          "items": {
+            "exact": "整行完全匹配去重",
+            "exactDesc": "删除所有字段完全相同的行",
+            "key": "关键列去重",
+            "keyDesc": "根据指定列的值判断重复",
+            "keepFirst": "保留首次出现",
+            "keepFirstDesc": "重复行保留第一条",
+            "keepLast": "保留最后出现",
+            "keepLastDesc": "重复行保留最后一条"
+          }
         },
         "sort": {
-          "tip": "支持数值、文本、日期多种排序"
+          "title": "数据排序",
+          "items": {
+            "asc": "升序排列",
+            "ascDesc": "按数值/文本/日期从小到大",
+            "desc": "降序排列",
+            "descDesc": "按数值/文本/日期从大到小",
+            "shuffle": "随机乱序",
+            "shuffleDesc": "打乱数据行的顺序"
+          }
         },
-        "date": {
-          "tip": "自动识别混乱日期格式并统一"
+        "format": {
+          "title": "格式处理与转换",
+          "items": {
+            "date": "日期格式统一",
+            "dateDesc": "自动识别混乱日期并转为标准格式",
+            "round": "数字修约",
+            "roundDesc": "保留指定小数位数",
+            "csv": "转为CSV",
+            "csvDesc": "Excel数据导出为CSV格式",
+            "json": "转为JSON",
+            "jsonDesc": "Excel数据导出为JSON格式",
+            "sqlInsert": "转为SQL INSERT",
+            "sqlInsertDesc": "生成INSERT INTO语句",
+            "sqlIn": "转为SQL IN查询",
+            "sqlInDesc": "生成IN查询语句"
+          }
         },
-        "convert": {
-          "tip": "Excel转CSV/JSON/SQL多格式支持"
+        "text": {
+          "title": "文本处理",
+          "items": {
+            "replace": "文本替换",
+            "replaceDesc": "批量查找并替换文字内容",
+            "letterMap": "字母映射替换",
+            "letterMapDesc": "使用自定义映射表替换字母",
+            "upper": "转大写",
+            "upperDesc": "英文字母全部转为大写",
+            "lower": "转小写",
+            "lowerDesc": "英文字母全部转为小写",
+            "capitalize": "首字母大写",
+            "capitalizeDesc": "每个单词首字母转为大写"
+          }
         },
         "extract": {
-          "tip": "快速提取邮箱、手机号等内容"
+          "title": "批量提取",
+          "items": {
+            "colStr": "列转字符串",
+            "colStrDesc": "将选中列数据用逗号分隔导出为字符串",
+            "regex": "正则提取",
+            "regexDesc": "使用正则表达式提取匹配内容"
+          }
         },
         "calc": {
-          "tip": "支持分组汇总统计"
+          "title": "统计计算",
+          "items": {
+            "sum": "求和",
+            "sumDesc": "计算数值列的总和",
+            "count": "计数",
+            "countDesc": "统计非空单元格数量",
+            "avg": "平均值",
+            "avgDesc": "计算数值列的算术平均值",
+            "max": "最大值",
+            "maxDesc": "找出数值列的最大值",
+            "min": "最小值",
+            "minDesc": "找出数值列的最小值",
+            "batchMath": "批量运算",
+            "batchMathDesc": "对数值列进行加减乘除运算",
+            "group": "分组汇总",
+            "groupDesc": "按指定列分组，对汇总列求和/计数/均值等"
+          }
         },
-        "custom": {
-          "tip": "管道模式可组合多个操作批量处理"
-        },
-        "merge": {
-          "tip": "多个文件可追加行或横向拼接"
-        },
-        "lookup": {
-          "tip": "类似VLOOKUP的多表关联匹配"
+        "multi": {
+          "title": "多文件操作",
+          "items": {
+            "append": "追加行合并",
+            "appendDesc": "将多个文件的行首尾相接，表头对齐",
+            "horizontal": "横向拼接",
+            "horizontalDesc": "将多个文件的列左右拼接",
+            "lookup": "VLOOKUP匹配",
+            "lookupDesc": "类似Excel VLOOKUP的多表关联匹配"
+          }
         },
         "wage": {
-          "tip": "一键拆分为每人一条带表头的工资条"
+          "title": "工资条拆分",
+          "items": {
+            "split": "按姓名拆分",
+            "splitDesc": "将工资表拆分为每人一条带表头的工资条",
+            "excel": "导出Excel",
+            "excelDesc": "每个员工一个Sheet，保留原样式",
+            "pdf": "导出PDF",
+            "pdfDesc": "适合打印，支持纸张方向和字体设置"
+          }
+        },
+        "pipeline": {
+          "title": "自定义管道与智能意图",
+          "items": {
+            "custom": "自定义管道",
+            "customDesc": "组合多个操作步骤，批量顺序处理",
+            "intent": "智能意图输入",
+            "intentDesc": "自然语言输入自动识别操作意图，多意图自动进入管道模式"
+          }
         }
       },
       "tips": "小贴士",
